@@ -1,9 +1,10 @@
-import db, { Prisma, PrismaClient, User } from "db";
+import { Prisma, PrismaClient, User } from "db";
 import { EventEmitter } from 'events';
 import { Octokit } from "octokit";
 import { range, sleep, wrapErr } from "shared/lib";
+import { repoApiToDto } from "shared/mappers";
 import { IGithubDto } from "shared/models";
-import { GithubRepoCommit, IGithubRepo } from "./models";
+import { IGhApiAggregate, IGhApiCommit, IGhApiRepo } from "./githubapi.model";
 
 
 export class GithubSyncService extends EventEmitter {
@@ -35,6 +36,8 @@ export class GithubSyncService extends EventEmitter {
 
         const totalPage: number = this.getPagesFromLink(response!.headers.link ?? '');
 
+        response?.headers["x-ratelimit-remaining"]
+
         this.emit("sync-process-start", totalPage)
 
         let current = 1
@@ -53,8 +56,12 @@ export class GithubSyncService extends EventEmitter {
 
         const [error, response] = await wrapErr(this.client.rest.activity.listWatchedReposForAuthenticatedUser({ headers: { accept: "application/vnd.github.mercy-preview+json" }, page }))
 
+        if (!this.isRateLimitGuard(response?.headers["x-ratelimit-remaining"])) {
+            return
+        }
+
         for (const repo of response!.data) {
-            yield* this.prepareItemStep(repo as IGithubRepo)
+            yield* this.prepareItemStep(repo as IGhApiRepo)
         }
 
         this.emit("sync-page-end", page)
@@ -62,32 +69,36 @@ export class GithubSyncService extends EventEmitter {
         return
     }
 
-    async *prepareItemStep(repo: IGithubRepo) {
+    async *prepareItemStep(repo: IGhApiRepo) {
         console.log(`STEP 3 => prepareItemStep => ${repo.id}`);
 
         const commits = await this.client.rest.repos.listCommits({ owner: repo.owner?.login!, repo: repo.name!, page: 1, per_page: 1 })
 
         const languages = await this.client.rest.repos.listLanguages({ owner: repo.owner!.login ?? '', repo: repo.name! })
 
-        yield* this.transformItemStep({ repo, commits: commits.data! as GithubRepoCommit[], languages: languages.data })
+        yield* this.transformItemStep({ repo, commits: commits.data! as IGhApiCommit[], languages: languages.data })
     }
 
-    async *transformItemStep(aggregate: { repo: IGithubRepo, commits: GithubRepoCommit[], languages: { [key: string]: number } }) {
+    async *transformItemStep(aggregate: IGhApiAggregate) {
         console.log(`STEP 4 => transformItemStep => ${aggregate.repo.id}`);
 
-        const dto: IGithubDto = {
-            id: aggregate.repo.id!!,
-            name: aggregate.repo.name!,
-            full_name: aggregate.repo.full_name!,
-            html_url: aggregate.repo.html_url!,
-            url: aggregate.repo.url!,
-            description: aggregate.repo.description!,
-            stargazers_count: aggregate.repo.stargazers_count!,
-            avatar_url: aggregate.repo.owner!.avatar_url!,
-            latest_commit: aggregate.commits[0]!.commit!.author?.date!,
-            topics: aggregate.repo.topics!,
-            languages: aggregate.languages
-        }
+        // const dto: IGithubDto = {
+        //     id: aggregate.repo.id!!,
+        //     name: aggregate.repo.name!,
+        //     full_name: aggregate.repo.full_name!,
+        //     html_url: aggregate.repo.html_url!,
+        //     url: aggregate.repo.url!,
+        //     description: aggregate.repo.description!,
+        //     stargazers_count: aggregate.repo.stargazers_count!,
+        //     avatar_url: aggregate.repo.owner!.avatar_url!,
+        //     latest_commit: aggregate.commits[0]!.commit!.author?.date!,
+        //     topics: aggregate.repo.topics!,
+        //     languages: aggregate.languages
+        // }
+
+        const dto: IGithubDto = repoApiToDto(aggregate)
+
+        yield dto
 
         yield* this.saveItemToDbStep(dto)
     }
@@ -96,7 +107,7 @@ export class GithubSyncService extends EventEmitter {
         console.log(`STEP 5 => saveItemToDbStep => ${repo.id}`);
 
         try {
-            const repoDb = await db.githubRepo.upsert({
+            const repoDb = await this.db.githubRepo.upsert({
                 where: {
                     id: repo.id
                 },
@@ -131,6 +142,9 @@ export class GithubSyncService extends EventEmitter {
                     }
                 }
             })
+            // console.log(repoDb);
+
+            yield repoDb
         } catch (error) {
             if (error instanceof Prisma.PrismaClientKnownRequestError) {
                 console.log(JSON.stringify(error));
@@ -144,9 +158,9 @@ export class GithubSyncService extends EventEmitter {
             if (error instanceof Prisma.PrismaClientInitializationError) {
                 console.log(JSON.stringify(error));
             }
+            console.log(error);
+            yield false
         }
-
-        yield true
     }
 
     prepareLanguageQuery(languages?: { [key: string]: number }): { language: string, bytes: number }[] {
@@ -154,14 +168,26 @@ export class GithubSyncService extends EventEmitter {
     }
 
     prepareTopicQuery(topics?: string[]): { where: { value: string }, create: { value: string } }[] {
-        const t = topics!.map(topic => ({ where: { value: topic }, create: { value: topic } }))
         return topics ?
             topics!.map(topic => ({ where: { value: topic }, create: { value: topic } }))
             :
             []
     }
 
+    isRateLimitGuard(limitRemaining: string | undefined): boolean {
+        if (limitRemaining !== undefined) {
+            const limitRemainingNr = parseInt(limitRemaining);
+
+            return limitRemainingNr >= 10
+        }
+
+        return false
+    }
+
     getPagesFromLink(link: string): number {
+
+        // let nextPage = response.headers.get('Link').match(/<(.*?)>; rel="next"/);
+        // nextPage = nextPage?.[1];
 
         if (link === '') { return 0; }
         var regex = /page=/g;
@@ -285,7 +311,7 @@ export class GithubSyncServiceEventer extends EventEmitter {
             console.log(`onSaveAllItemsPageToDb->page:${page}->repo:${repoDto.id}`);
 
             try {
-                const repoDb = await db.githubRepo.upsert({
+                const repoDb = await this.db.githubRepo.upsert({
                     where: {
                         id: repoDto.id
                     },
@@ -340,7 +366,7 @@ export class GithubSyncServiceEventer extends EventEmitter {
     }
 
     async saveOrUpdate(repoDto: IGithubDto) {
-        return await wrapErr(db.githubRepo.upsert({
+        return await wrapErr(this.db.githubRepo.upsert({
             where: {
                 id: repoDto.id
             },
@@ -423,9 +449,11 @@ export class SyncService extends EventEmitter {
     async start(client: Octokit) {
         this.client = client
 
-        const pages = await this.getAllPagesToDo();
+        const pages: number[] = await this.getAllPagesToDo();
 
+        for (const page of pages) {
 
+        }
     }
 
     async getAllPagesToDo() {
@@ -477,7 +505,7 @@ export class SyncService extends EventEmitter {
     async savePageItems(reposWithAggregate: IGithubDto[]) {
         for (const repoDto of reposWithAggregate) {
             try {
-                const repoDb = await db.githubRepo.upsert({
+                const repoDb = await this.db.githubRepo.upsert({
                     where: {
                         id: repoDto.id
                     },

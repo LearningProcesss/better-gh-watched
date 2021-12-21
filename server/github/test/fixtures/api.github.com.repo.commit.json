@@ -1,0 +1,2372 @@
+[
+  {
+    "sha": "4d404d47145a02ed0d79a518d1fc34c0c0b0fc12",
+    "node_id": "C_kwDOABlbPtoAKDRkNDA0ZDQ3MTQ1YTAyZWQwZDc5YTUxOGQxZmMzNGMwYzBiMGZjMTI",
+    "commit": {
+      "author": {
+        "name": "Joey Harrington",
+        "email": "dev@jharring.com",
+        "date": "2021-11-23T21:45:14Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-11-23T21:45:14Z"
+      },
+      "message": "docs: fix handleUncaughtExceptions docs typos (#1885)\n\nThere are a few lines in docs for `handleUncaughtExceptions` option,\r\nboth in markdown docs and in jsdoc, which seem irrelevant and\r\ndisconnected. This appears to be a mistake that has been copied to\r\nseveral places.",
+      "tree": {
+        "sha": "05c907502bcf66267e92fe89287f0ec5b82e0afc",
+        "url": "https://api.github.com/repos/restify/node-restify/git/trees/05c907502bcf66267e92fe89287f0ec5b82e0afc"
+      },
+      "url": "https://api.github.com/repos/restify/node-restify/git/commits/4d404d47145a02ed0d79a518d1fc34c0c0b0fc12",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhnWDqCRBK7hj4Ov3rIwAAjOUIACi8izN7wExhV1sPJUrUovCY\ntzKa1hgQNiGrKy0/EHh8rruOjnKHhxiuyAEh4AFAtBkkFU+l4FVi+xF/VzXh6yft\nMsNPS9+Nirf6K2GkoBbYcbNnBmw1iG/ZXTFIsGf4DDI0qUliv82gkqPGLXE98mMJ\nXbRZPNlELTf9nFCaDeQBxo6Zf11wK1/L+zIT1IIPWmChpqfKr8wdIKhp+78ug3hZ\nTA+kM35mnzblbDL9LSgvhVKQnuszUaeXUuMnP20koxtGK8YDkksz7gGdt7xUH34+\nkRs5syUHp3W88h7E/BdM0OK698MQTPRqQJcguxYb+igtZL8YhfvfCEn8l6YhYA8=\n=6sE8\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 05c907502bcf66267e92fe89287f0ec5b82e0afc\nparent 71c7f4965342c13cac55847f87149cc34c1ad566\nauthor Joey Harrington <dev@jharring.com> 1637703914 -0800\ncommitter GitHub <noreply@github.com> 1637703914 -0800\n\ndocs: fix handleUncaughtExceptions docs typos (#1885)\n\nThere are a few lines in docs for `handleUncaughtExceptions` option,\r\nboth in markdown docs and in jsdoc, which seem irrelevant and\r\ndisconnected. This appears to be a mistake that has been copied to\r\nseveral places."
+      }
+    },
+    "url": "https://api.github.com/repos/restify/node-restify/commits/4d404d47145a02ed0d79a518d1fc34c0c0b0fc12",
+    "html_url": "https://github.com/restify/node-restify/commit/4d404d47145a02ed0d79a518d1fc34c0c0b0fc12",
+    "comments_url": "https://api.github.com/repos/restify/node-restify/commits/4d404d47145a02ed0d79a518d1fc34c0c0b0fc12/comments",
+    "author": {
+      "login": "josephharrington",
+      "id": 1109303,
+      "node_id": "MDQ6VXNlcjExMDkzMDM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1109303?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/josephharrington",
+      "html_url": "https://github.com/josephharrington",
+      "followers_url": "https://api.github.com/users/josephharrington/followers",
+      "following_url": "https://api.github.com/users/josephharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/josephharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/josephharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/josephharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/josephharrington/orgs",
+      "repos_url": "https://api.github.com/users/josephharrington/repos",
+      "events_url": "https://api.github.com/users/josephharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/josephharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "71c7f4965342c13cac55847f87149cc34c1ad566",
+        "url": "https://api.github.com/repos/restify/node-restify/commits/71c7f4965342c13cac55847f87149cc34c1ad566",
+        "html_url": "https://github.com/restify/node-restify/commit/71c7f4965342c13cac55847f87149cc34c1ad566"
+      }
+    ]
+  },
+  {
+    "sha": "71c7f4965342c13cac55847f87149cc34c1ad566",
+    "node_id": "C_kwDOABlbPtoAKDcxYzdmNDk2NTM0MmMxM2NhYzU1ODQ3Zjg3MTQ5Y2MzNGMxYWQ1NjY",
+    "commit": {
+      "author": {
+        "name": "Mary Marchini",
+        "email": "mmarchini@netflix.com",
+        "date": "2021-09-29T03:51:02Z"
+      },
+      "committer": {
+        "name": "mary marchini",
+        "email": "oss@mmarchini.me",
+        "date": "2021-09-29T03:59:33Z"
+      },
+      "message": "chore: Actions CI for 16",
+      "tree": {
+        "sha": "e5937d284d4e9847a2e0e70ba69a23ba5f8c2f38",
+        "url": "https://api.github.com/repos/restify/node-restify/git/trees/e5937d284d4e9847a2e0e70ba69a23ba5f8c2f38"
+      },
+      "url": "https://api.github.com/repos/restify/node-restify/git/commits/71c7f4965342c13cac55847f87149cc34c1ad566",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/restify/node-restify/commits/71c7f4965342c13cac55847f87149cc34c1ad566",
+    "html_url": "https://github.com/restify/node-restify/commit/71c7f4965342c13cac55847f87149cc34c1ad566",
+    "comments_url": "https://api.github.com/repos/restify/node-restify/commits/71c7f4965342c13cac55847f87149cc34c1ad566/comments",
+    "author": {
+      "login": "mmarchini",
+      "id": 4048656,
+      "node_id": "MDQ6VXNlcjQwNDg2NTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4048656?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mmarchini",
+      "html_url": "https://github.com/mmarchini",
+      "followers_url": "https://api.github.com/users/mmarchini/followers",
+      "following_url": "https://api.github.com/users/mmarchini/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mmarchini/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mmarchini/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mmarchini/subscriptions",
+      "organizations_url": "https://api.github.com/users/mmarchini/orgs",
+      "repos_url": "https://api.github.com/users/mmarchini/repos",
+      "events_url": "https://api.github.com/users/mmarchini/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mmarchini/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mmarchini",
+      "id": 4048656,
+      "node_id": "MDQ6VXNlcjQwNDg2NTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4048656?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mmarchini",
+      "html_url": "https://github.com/mmarchini",
+      "followers_url": "https://api.github.com/users/mmarchini/followers",
+      "following_url": "https://api.github.com/users/mmarchini/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mmarchini/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mmarchini/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mmarchini/subscriptions",
+      "organizations_url": "https://api.github.com/users/mmarchini/orgs",
+      "repos_url": "https://api.github.com/users/mmarchini/repos",
+      "events_url": "https://api.github.com/users/mmarchini/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mmarchini/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6aac376c3c197fc41ec786c1c7902fe1ea469997",
+        "url": "https://api.github.com/repos/restify/node-restify/commits/6aac376c3c197fc41ec786c1c7902fe1ea469997",
+        "html_url": "https://github.com/restify/node-restify/commit/6aac376c3c197fc41ec786c1c7902fe1ea469997"
+      }
+    ]
+  },
+  {
+    "sha": "6aac376c3c197fc41ec786c1c7902fe1ea469997",
+    "node_id": "C_kwDOABlbPtoAKDZhYWMzNzZjM2MxOTdmYzQxZWM3ODZjMWM3OTAyZmUxZWE0Njk5OTc",
+    "commit": {
+      "author": {
+        "name": "Mary Marchini",
+        "email": "mmarchini@netflix.com",
+        "date": "2021-09-29T03:46:28Z"
+      },
+      "committer": {
+        "name": "mary marchini",
+        "email": "oss@mmarchini.me",
+        "date": "2021-09-29T03:59:33Z"
+      },
+      "message": "chore: fix flaky test",
+      "tree": {
+        "sha": "a3a205e4687b98ab54d24a85f089a31dc5c8578c",
+        "url": "https://api.github.com/repos/restify/node-restify/git/trees/a3a205e4687b98ab54d24a85f089a31dc5c8578c"
+      },
+      "url": "https://api.github.com/repos/restify/node-restify/git/commits/6aac376c3c197fc41ec786c1c7902fe1ea469997",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/restify/node-restify/commits/6aac376c3c197fc41ec786c1c7902fe1ea469997",
+    "html_url": "https://github.com/restify/node-restify/commit/6aac376c3c197fc41ec786c1c7902fe1ea469997",
+    "comments_url": "https://api.github.com/repos/restify/node-restify/commits/6aac376c3c197fc41ec786c1c7902fe1ea469997/comments",
+    "author": {
+      "login": "mmarchini",
+      "id": 4048656,
+      "node_id": "MDQ6VXNlcjQwNDg2NTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4048656?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mmarchini",
+      "html_url": "https://github.com/mmarchini",
+      "followers_url": "https://api.github.com/users/mmarchini/followers",
+      "following_url": "https://api.github.com/users/mmarchini/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mmarchini/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mmarchini/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mmarchini/subscriptions",
+      "organizations_url": "https://api.github.com/users/mmarchini/orgs",
+      "repos_url": "https://api.github.com/users/mmarchini/repos",
+      "events_url": "https://api.github.com/users/mmarchini/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mmarchini/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mmarchini",
+      "id": 4048656,
+      "node_id": "MDQ6VXNlcjQwNDg2NTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4048656?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mmarchini",
+      "html_url": "https://github.com/mmarchini",
+      "followers_url": "https://api.github.com/users/mmarchini/followers",
+      "following_url": "https://api.github.com/users/mmarchini/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mmarchini/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mmarchini/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mmarchini/subscriptions",
+      "organizations_url": "https://api.github.com/users/mmarchini/orgs",
+      "repos_url": "https://api.github.com/users/mmarchini/repos",
+      "events_url": "https://api.github.com/users/mmarchini/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mmarchini/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "36318ae4c1fee02d3bc3737e34e1ea33e604f674",
+        "url": "https://api.github.com/repos/restify/node-restify/commits/36318ae4c1fee02d3bc3737e34e1ea33e604f674",
+        "html_url": "https://github.com/restify/node-restify/commit/36318ae4c1fee02d3bc3737e34e1ea33e604f674"
+      }
+    ]
+  },
+  {
+    "sha": "36318ae4c1fee02d3bc3737e34e1ea33e604f674",
+    "node_id": "C_kwDOABlbPtoAKDM2MzE4YWU0YzFmZWUwMmQzYmMzNzM3ZTM0ZTFlYTMzZTYwNGY2NzQ",
+    "commit": {
+      "author": {
+        "name": "Mary Marchini",
+        "email": "mmarchini@netflix.com",
+        "date": "2021-09-29T03:42:36Z"
+      },
+      "committer": {
+        "name": "mary marchini",
+        "email": "oss@mmarchini.me",
+        "date": "2021-09-29T03:59:33Z"
+      },
+      "message": "fix: use more reliable close event\n\nThe close event from the request object is not guaranteed to fire on the\nsame order across major versions of Node.js, the more accurate way to\nlook if the connection was closed is to listen to the event on the\nsocket. Fixes tests on v16.\n\nRef: https://github.com/nodejs/node/issues/38924",
+      "tree": {
+        "sha": "63c3590bc76948acafcca693a61305ce8333501f",
+        "url": "https://api.github.com/repos/restify/node-restify/git/trees/63c3590bc76948acafcca693a61305ce8333501f"
+      },
+      "url": "https://api.github.com/repos/restify/node-restify/git/commits/36318ae4c1fee02d3bc3737e34e1ea33e604f674",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/restify/node-restify/commits/36318ae4c1fee02d3bc3737e34e1ea33e604f674",
+    "html_url": "https://github.com/restify/node-restify/commit/36318ae4c1fee02d3bc3737e34e1ea33e604f674",
+    "comments_url": "https://api.github.com/repos/restify/node-restify/commits/36318ae4c1fee02d3bc3737e34e1ea33e604f674/comments",
+    "author": {
+      "login": "mmarchini",
+      "id": 4048656,
+      "node_id": "MDQ6VXNlcjQwNDg2NTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4048656?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mmarchini",
+      "html_url": "https://github.com/mmarchini",
+      "followers_url": "https://api.github.com/users/mmarchini/followers",
+      "following_url": "https://api.github.com/users/mmarchini/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mmarchini/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mmarchini/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mmarchini/subscriptions",
+      "organizations_url": "https://api.github.com/users/mmarchini/orgs",
+      "repos_url": "https://api.github.com/users/mmarchini/repos",
+      "events_url": "https://api.github.com/users/mmarchini/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mmarchini/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mmarchini",
+      "id": 4048656,
+      "node_id": "MDQ6VXNlcjQwNDg2NTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4048656?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mmarchini",
+      "html_url": "https://github.com/mmarchini",
+      "followers_url": "https://api.github.com/users/mmarchini/followers",
+      "following_url": "https://api.github.com/users/mmarchini/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mmarchini/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mmarchini/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mmarchini/subscriptions",
+      "organizations_url": "https://api.github.com/users/mmarchini/orgs",
+      "repos_url": "https://api.github.com/users/mmarchini/repos",
+      "events_url": "https://api.github.com/users/mmarchini/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mmarchini/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3002182cacc7a9334237a9284a339ba93d3f213c",
+        "url": "https://api.github.com/repos/restify/node-restify/commits/3002182cacc7a9334237a9284a339ba93d3f213c",
+        "html_url": "https://github.com/restify/node-restify/commit/3002182cacc7a9334237a9284a339ba93d3f213c"
+      }
+    ]
+  },
+  {
+    "sha": "3002182cacc7a9334237a9284a339ba93d3f213c",
+    "node_id": "MDY6Q29tbWl0MTY2MTc1ODozMDAyMTgyY2FjYzdhOTMzNDIzN2E5Mjg0YTMzOWJhOTNkM2YyMTNj",
+    "commit": {
+      "author": {
+        "name": "František Žiačik",
+        "email": "ziacik@gmail.com",
+        "date": "2021-07-08T19:02:14Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-07-08T19:02:14Z"
+      },
+      "message": "fix: format falsy constants properly in json formatter (#1792)",
+      "tree": {
+        "sha": "aa60e95d4c2ab2122e3a3993c5e398dc018216ec",
+        "url": "https://api.github.com/repos/restify/node-restify/git/trees/aa60e95d4c2ab2122e3a3993c5e398dc018216ec"
+      },
+      "url": "https://api.github.com/repos/restify/node-restify/git/commits/3002182cacc7a9334237a9284a339ba93d3f213c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJg50u2CRBK7hj4Ov3rIwAAIaIIAJqyB9/U7jkbms9zy3VYXl2I\nYM7Rz21BIvEC0WwcYgh9n6USDYwIfam9IRFGdCB/L71RFuhluTXhetFPWs3FB94h\nRfPxz6HwlVHsfvgdsrB6urtzw2zBRkmVhUNiLlo4Z4sZPztVoARCzeyD+L9lFGyK\nm2U1Hjyoy5uromU2D+9ljvLPyEJfAUGRuqm5+dawrsG0ee4GA5VDFaqWjN3NVfyg\ng/8OjD+07uo2iYIzM1VrCaXfFgkSA5xIZGRpx0xLY8L8qD6DwQ1nGc5VNF33YEQ2\njkQ+S1tVQqJXX9+2jC1+MXf05/pzgejDEnGI4aqiy38q6xlDzQaM9wk2Ulpp5Ig=\n=/OhO\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree aa60e95d4c2ab2122e3a3993c5e398dc018216ec\nparent 19b86627fb9122456aec6c1fb5d22e439e5080db\nauthor František Žiačik <ziacik@gmail.com> 1625770934 +0200\ncommitter GitHub <noreply@github.com> 1625770934 -0700\n\nfix: format falsy constants properly in json formatter (#1792)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/restify/node-restify/commits/3002182cacc7a9334237a9284a339ba93d3f213c",
+    "html_url": "https://github.com/restify/node-restify/commit/3002182cacc7a9334237a9284a339ba93d3f213c",
+    "comments_url": "https://api.github.com/repos/restify/node-restify/commits/3002182cacc7a9334237a9284a339ba93d3f213c/comments",
+    "author": {
+      "login": "ziacik",
+      "id": 4528506,
+      "node_id": "MDQ6VXNlcjQ1Mjg1MDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4528506?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ziacik",
+      "html_url": "https://github.com/ziacik",
+      "followers_url": "https://api.github.com/users/ziacik/followers",
+      "following_url": "https://api.github.com/users/ziacik/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ziacik/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ziacik/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ziacik/subscriptions",
+      "organizations_url": "https://api.github.com/users/ziacik/orgs",
+      "repos_url": "https://api.github.com/users/ziacik/repos",
+      "events_url": "https://api.github.com/users/ziacik/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ziacik/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "19b86627fb9122456aec6c1fb5d22e439e5080db",
+        "url": "https://api.github.com/repos/restify/node-restify/commits/19b86627fb9122456aec6c1fb5d22e439e5080db",
+        "html_url": "https://github.com/restify/node-restify/commit/19b86627fb9122456aec6c1fb5d22e439e5080db"
+      }
+    ]
+  },
+  {
+    "sha": "19b86627fb9122456aec6c1fb5d22e439e5080db",
+    "node_id": "MDY6Q29tbWl0MTY2MTc1ODoxOWI4NjYyN2ZiOTEyMjQ1NmFlYzZjMWZiNWQyMmU0MzllNTA4MGRi",
+    "commit": {
+      "author": {
+        "name": "Ethan Resnick",
+        "email": "ethan.resnick@gmail.com",
+        "date": "2020-09-15T19:20:05Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2020-09-15T19:20:05Z"
+      },
+      "message": "docs(jsdocs): fix jsdoc for response.sendRaw (#1858)",
+      "tree": {
+        "sha": "bf8792fb408e7ee53f5ea6a1b8fe6a5e00b00950",
+        "url": "https://api.github.com/repos/restify/node-restify/git/trees/bf8792fb408e7ee53f5ea6a1b8fe6a5e00b00950"
+      },
+      "url": "https://api.github.com/repos/restify/node-restify/git/commits/19b86627fb9122456aec6c1fb5d22e439e5080db",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJfYRPlCRBK7hj4Ov3rIwAAdHIIAFZqUVM3pjejgP6VfNXS1hx4\nHLs/NQW809TyH636E3Q40r1NbccY8rQYX2JAWOQfp4VxI3FgiHU5R/RXcHwbOyWl\nKhUNZjNnmVXT+nkJr991sQMgb/Q9dmg4sm8FVRgI/NK10XT1RU5uRD7PspoMngyK\nQRyO2XLFUqYL48daDbZRO0gz/57fflwE7tKZd5LSfI08gPv4DhfQVL0AxYl71k23\n36rKfMtTZCV48+k1w2GJoeKVNltP8TsXt5Mz90cbqDlTM3eaO+bb6C4U3fDj423G\nsePtQLHia/bagPCG1jPkPffBsR4YHdgrKDeXMUNX9c0XZV/gwS4kBeQLnAyYiB4=\n=SxgN\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree bf8792fb408e7ee53f5ea6a1b8fe6a5e00b00950\nparent 9153587c023a876237c1d8bc7491fee4984d9074\nauthor Ethan Resnick <ethan.resnick@gmail.com> 1600197605 -0400\ncommitter GitHub <noreply@github.com> 1600197605 -0700\n\ndocs(jsdocs): fix jsdoc for response.sendRaw (#1858)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/restify/node-restify/commits/19b86627fb9122456aec6c1fb5d22e439e5080db",
+    "html_url": "https://github.com/restify/node-restify/commit/19b86627fb9122456aec6c1fb5d22e439e5080db",
+    "comments_url": "https://api.github.com/repos/restify/node-restify/commits/19b86627fb9122456aec6c1fb5d22e439e5080db/comments",
+    "author": {
+      "login": "ethanresnick",
+      "id": 471894,
+      "node_id": "MDQ6VXNlcjQ3MTg5NA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/471894?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ethanresnick",
+      "html_url": "https://github.com/ethanresnick",
+      "followers_url": "https://api.github.com/users/ethanresnick/followers",
+      "following_url": "https://api.github.com/users/ethanresnick/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ethanresnick/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ethanresnick/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ethanresnick/subscriptions",
+      "organizations_url": "https://api.github.com/users/ethanresnick/orgs",
+      "repos_url": "https://api.github.com/users/ethanresnick/repos",
+      "events_url": "https://api.github.com/users/ethanresnick/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ethanresnick/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9153587c023a876237c1d8bc7491fee4984d9074",
+        "url": "https://api.github.com/repos/restify/node-restify/commits/9153587c023a876237c1d8bc7491fee4984d9074",
+        "html_url": "https://github.com/restify/node-restify/commit/9153587c023a876237c1d8bc7491fee4984d9074"
+      }
+    ]
+  },
+  {
+    "sha": "9153587c023a876237c1d8bc7491fee4984d9074",
+    "node_id": "MDY6Q29tbWl0MTY2MTc1ODo5MTUzNTg3YzAyM2E4NzYyMzdjMWQ4YmM3NDkxZmVlNDk4NGQ5MDc0",
+    "commit": {
+      "author": {
+        "name": "Guilherme Hermeto",
+        "email": "ghermeto@users.noreply.github.com",
+        "date": "2020-07-14T19:05:22Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2020-07-14T19:05:22Z"
+      },
+      "message": "feat: remove re-routing from handler (#1847)\n\nBREAKING CHANGE: deprecates and removes re-routing when passing a string parameter to `next()`",
+      "tree": {
+        "sha": "61fd657976b14dfc0584c85fa356e7342063055b",
+        "url": "https://api.github.com/repos/restify/node-restify/git/trees/61fd657976b14dfc0584c85fa356e7342063055b"
+      },
+      "url": "https://api.github.com/repos/restify/node-restify/git/commits/9153587c023a876237c1d8bc7491fee4984d9074",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJfDgHyCRBK7hj4Ov3rIwAAdHIIAAYDXBZCHOJAE5FDk6yJNRb1\nqkowx/u3F5DEgUyCWBrLFS3SP4vBHMdz8mdt3u0lTamLcrgQhoziJs8q642VH0HR\nj2AzJMD5dm4fUeSx6PKlREuUZ/WoiyWn4BOFJpYMG5mvh0AqqCXzbClCBJ5P4hb0\nqiYmzehP8FKgsoV/2bH8YQobPCYCHIogCq5XUbA2dTxvfKp1AL/L4vnUXxi3QNjr\n69+0aHGkLb2wUNIH2OiO1vPBrpgTEdCajsu0jSq7fp9yXr6WcXMGllC0+r6gueJR\nxU21jcTHbt5HO5DwOeDn6+UC7W9QhAe66oELxJ/UWcg1RI8eNe0KM1977GJbZTw=\n=fCre\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 61fd657976b14dfc0584c85fa356e7342063055b\nparent 71ac3a05da81334aac57956acb374989b4e13fe0\nauthor Guilherme Hermeto <ghermeto@users.noreply.github.com> 1594753522 -0700\ncommitter GitHub <noreply@github.com> 1594753522 -0700\n\nfeat: remove re-routing from handler (#1847)\n\nBREAKING CHANGE: deprecates and removes re-routing when passing a string parameter to `next()`"
+      }
+    },
+    "url": "https://api.github.com/repos/restify/node-restify/commits/9153587c023a876237c1d8bc7491fee4984d9074",
+    "html_url": "https://github.com/restify/node-restify/commit/9153587c023a876237c1d8bc7491fee4984d9074",
+    "comments_url": "https://api.github.com/repos/restify/node-restify/commits/9153587c023a876237c1d8bc7491fee4984d9074/comments",
+    "author": {
+      "login": "ghermeto",
+      "id": 224782,
+      "node_id": "MDQ6VXNlcjIyNDc4Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/224782?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ghermeto",
+      "html_url": "https://github.com/ghermeto",
+      "followers_url": "https://api.github.com/users/ghermeto/followers",
+      "following_url": "https://api.github.com/users/ghermeto/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ghermeto/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ghermeto/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ghermeto/subscriptions",
+      "organizations_url": "https://api.github.com/users/ghermeto/orgs",
+      "repos_url": "https://api.github.com/users/ghermeto/repos",
+      "events_url": "https://api.github.com/users/ghermeto/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ghermeto/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "71ac3a05da81334aac57956acb374989b4e13fe0",
+        "url": "https://api.github.com/repos/restify/node-restify/commits/71ac3a05da81334aac57956acb374989b4e13fe0",
+        "html_url": "https://github.com/restify/node-restify/commit/71ac3a05da81334aac57956acb374989b4e13fe0"
+      }
+    ]
+  },
+  {
+    "sha": "71ac3a05da81334aac57956acb374989b4e13fe0",
+    "node_id": "MDY6Q29tbWl0MTY2MTc1ODo3MWFjM2EwNWRhODEzMzRhYWM1Nzk1NmFjYjM3NDk4OWI0ZTEzZmUw",
+    "commit": {
+      "author": {
+        "name": "Snyk bot",
+        "email": "snyk-bot@snyk.io",
+        "date": "2020-07-11T01:28:07Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2020-07-11T01:28:07Z"
+      },
+      "message": "chore: upgrade send from 0.16.2 to 0.17.1 (#1846)\n\nSnyk has created this PR to upgrade send from 0.16.2 to 0.17.1.\r\n\r\nSee this package in NPM: https://www.npmjs.com/package/send",
+      "tree": {
+        "sha": "6840adb090216439ef15cfe7516a648e955b8511",
+        "url": "https://api.github.com/repos/restify/node-restify/git/trees/6840adb090216439ef15cfe7516a648e955b8511"
+      },
+      "url": "https://api.github.com/repos/restify/node-restify/git/commits/71ac3a05da81334aac57956acb374989b4e13fe0",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJfCRWnCRBK7hj4Ov3rIwAAdHIIABxtlOYyHY+YNHv60jaYv77T\nRYzEW3Kyry0fokdTCTI3i9NKbiJaor3S54VdBQ7YVcO1X80XpXlbtTkNh1HDuvC5\ns5wAttLKgrjiOUN0V2KcqrL0RbW2UtIgfknYk+wt8nhyyQRnLg2kkXRYJfr3weq0\n4p4lQYp6OQv/vz7z8ZsDgVDtmfXsPO8eyJ0+YRJZVi+dMcIpH/dzRq72p+NKpw5q\n36sApenk1kQYkycud6tufDK8t5eBgQm4xzdO2U6dFvI+QxIOO3/h4FzrKChKJdw3\nW26vmnTu31Kt+7DaDOKwqUXtD026CEtFE4pqUEQ+crCR/dEQKu5vGNMBW5cBJ6o=\n=G48d\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 6840adb090216439ef15cfe7516a648e955b8511\nparent 2f5bf8722c9e0ba0d45f32af5c2c16ddbaa538b4\nauthor Snyk bot <snyk-bot@snyk.io> 1594430887 +0300\ncommitter GitHub <noreply@github.com> 1594430887 -0700\n\nchore: upgrade send from 0.16.2 to 0.17.1 (#1846)\n\nSnyk has created this PR to upgrade send from 0.16.2 to 0.17.1.\r\n\r\nSee this package in NPM: https://www.npmjs.com/package/send"
+      }
+    },
+    "url": "https://api.github.com/repos/restify/node-restify/commits/71ac3a05da81334aac57956acb374989b4e13fe0",
+    "html_url": "https://github.com/restify/node-restify/commit/71ac3a05da81334aac57956acb374989b4e13fe0",
+    "comments_url": "https://api.github.com/repos/restify/node-restify/commits/71ac3a05da81334aac57956acb374989b4e13fe0/comments",
+    "author": {
+      "login": "snyk-bot",
+      "id": 19733683,
+      "node_id": "MDQ6VXNlcjE5NzMzNjgz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19733683?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/snyk-bot",
+      "html_url": "https://github.com/snyk-bot",
+      "followers_url": "https://api.github.com/users/snyk-bot/followers",
+      "following_url": "https://api.github.com/users/snyk-bot/following{/other_user}",
+      "gists_url": "https://api.github.com/users/snyk-bot/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/snyk-bot/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/snyk-bot/subscriptions",
+      "organizations_url": "https://api.github.com/users/snyk-bot/orgs",
+      "repos_url": "https://api.github.com/users/snyk-bot/repos",
+      "events_url": "https://api.github.com/users/snyk-bot/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/snyk-bot/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2f5bf8722c9e0ba0d45f32af5c2c16ddbaa538b4",
+        "url": "https://api.github.com/repos/restify/node-restify/commits/2f5bf8722c9e0ba0d45f32af5c2c16ddbaa538b4",
+        "html_url": "https://github.com/restify/node-restify/commit/2f5bf8722c9e0ba0d45f32af5c2c16ddbaa538b4"
+      }
+    ]
+  },
+  {
+    "sha": "2f5bf8722c9e0ba0d45f32af5c2c16ddbaa538b4",
+    "node_id": "MDY6Q29tbWl0MTY2MTc1ODoyZjViZjg3MjJjOWUwYmEwZDQ1ZjMyYWY1YzJjMTZkZGJhYTUzOGI0",
+    "commit": {
+      "author": {
+        "name": "Guilherme Hermeto",
+        "email": "ghermeto@users.noreply.github.com",
+        "date": "2020-07-11T01:22:38Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2020-07-11T01:22:38Z"
+      },
+      "message": "Prefer Pino logger over Bunyan (#1841)\n\nBREAKING CHANGE: removes `RequestCaptureStream` and replaces `Bunyan` with `Pino`",
+      "tree": {
+        "sha": "6adb7a847d627322f63d25b5ca40bb0df4ecd950",
+        "url": "https://api.github.com/repos/restify/node-restify/git/trees/6adb7a847d627322f63d25b5ca40bb0df4ecd950"
+      },
+      "url": "https://api.github.com/repos/restify/node-restify/git/commits/2f5bf8722c9e0ba0d45f32af5c2c16ddbaa538b4",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJfCRReCRBK7hj4Ov3rIwAAdHIIAGOvKUSMv+Q6We2ebcID0Bw7\nm2jDlvTITcNKvBMKzIbJ5Yp01KxR5M6BKGpBbwMzPeOyRXFRuj5b4Cc4vgWxGo8k\nrHLYQezI01NyHWRtKv7Eq0Vj2KIzBFZja93IqT95oPsle0JMANYtKYzcUNfdxBhz\nOwMNcmJFJxSXB/KE2OlUzYpugkF8/A+VB1waAHRb184GYUystEEUtzjnWqd17Hbd\n3MaHBPjnIkxQzuHyvFlmHvhXJD5+pksVD2R26vpXm8Lro7wqnKBZWrb68ZE6m6YW\nXG/f8yMqAG/WU3sUohmqOqWA3b+Cjyu7XP2hqsY/c5kP6HMnYeULCS1vP5IwmlY=\n=86PF\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 6adb7a847d627322f63d25b5ca40bb0df4ecd950\nparent 12be9e243a407eaf7a30cbb16e399ee2a46dec93\nauthor Guilherme Hermeto <ghermeto@users.noreply.github.com> 1594430558 -0700\ncommitter GitHub <noreply@github.com> 1594430558 -0700\n\nPrefer Pino logger over Bunyan (#1841)\n\nBREAKING CHANGE: removes `RequestCaptureStream` and replaces `Bunyan` with `Pino`"
+      }
+    },
+    "url": "https://api.github.com/repos/restify/node-restify/commits/2f5bf8722c9e0ba0d45f32af5c2c16ddbaa538b4",
+    "html_url": "https://github.com/restify/node-restify/commit/2f5bf8722c9e0ba0d45f32af5c2c16ddbaa538b4",
+    "comments_url": "https://api.github.com/repos/restify/node-restify/commits/2f5bf8722c9e0ba0d45f32af5c2c16ddbaa538b4/comments",
+    "author": {
+      "login": "ghermeto",
+      "id": 224782,
+      "node_id": "MDQ6VXNlcjIyNDc4Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/224782?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ghermeto",
+      "html_url": "https://github.com/ghermeto",
+      "followers_url": "https://api.github.com/users/ghermeto/followers",
+      "following_url": "https://api.github.com/users/ghermeto/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ghermeto/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ghermeto/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ghermeto/subscriptions",
+      "organizations_url": "https://api.github.com/users/ghermeto/orgs",
+      "repos_url": "https://api.github.com/users/ghermeto/repos",
+      "events_url": "https://api.github.com/users/ghermeto/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ghermeto/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "12be9e243a407eaf7a30cbb16e399ee2a46dec93",
+        "url": "https://api.github.com/repos/restify/node-restify/commits/12be9e243a407eaf7a30cbb16e399ee2a46dec93",
+        "html_url": "https://github.com/restify/node-restify/commit/12be9e243a407eaf7a30cbb16e399ee2a46dec93"
+      }
+    ]
+  },
+  {
+    "sha": "12be9e243a407eaf7a30cbb16e399ee2a46dec93",
+    "node_id": "MDY6Q29tbWl0MTY2MTc1ODoxMmJlOWUyNDNhNDA3ZWFmN2EzMGNiYjE2ZTM5OWVlMmE0NmRlYzkz",
+    "commit": {
+      "author": {
+        "name": "Guilherme Hermeto",
+        "email": "ghermeto@netflix.com",
+        "date": "2020-06-27T07:08:13Z"
+      },
+      "committer": {
+        "name": "Guilherme Hermeto",
+        "email": "ghermeto@users.noreply.github.com",
+        "date": "2020-07-10T04:44:18Z"
+      },
+      "message": "feat: async/await support\n\nBREAKING CHANGE: adds async/await support to pre, use and handler chains",
+      "tree": {
+        "sha": "68ad780ce2254313efdebeb5f6ff8e5914725432",
+        "url": "https://api.github.com/repos/restify/node-restify/git/trees/68ad780ce2254313efdebeb5f6ff8e5914725432"
+      },
+      "url": "https://api.github.com/repos/restify/node-restify/git/commits/12be9e243a407eaf7a30cbb16e399ee2a46dec93",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/restify/node-restify/commits/12be9e243a407eaf7a30cbb16e399ee2a46dec93",
+    "html_url": "https://github.com/restify/node-restify/commit/12be9e243a407eaf7a30cbb16e399ee2a46dec93",
+    "comments_url": "https://api.github.com/repos/restify/node-restify/commits/12be9e243a407eaf7a30cbb16e399ee2a46dec93/comments",
+    "author": {
+      "login": "ghermeto",
+      "id": 224782,
+      "node_id": "MDQ6VXNlcjIyNDc4Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/224782?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ghermeto",
+      "html_url": "https://github.com/ghermeto",
+      "followers_url": "https://api.github.com/users/ghermeto/followers",
+      "following_url": "https://api.github.com/users/ghermeto/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ghermeto/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ghermeto/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ghermeto/subscriptions",
+      "organizations_url": "https://api.github.com/users/ghermeto/orgs",
+      "repos_url": "https://api.github.com/users/ghermeto/repos",
+      "events_url": "https://api.github.com/users/ghermeto/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ghermeto/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ghermeto",
+      "id": 224782,
+      "node_id": "MDQ6VXNlcjIyNDc4Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/224782?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ghermeto",
+      "html_url": "https://github.com/ghermeto",
+      "followers_url": "https://api.github.com/users/ghermeto/followers",
+      "following_url": "https://api.github.com/users/ghermeto/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ghermeto/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ghermeto/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ghermeto/subscriptions",
+      "organizations_url": "https://api.github.com/users/ghermeto/orgs",
+      "repos_url": "https://api.github.com/users/ghermeto/repos",
+      "events_url": "https://api.github.com/users/ghermeto/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ghermeto/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "bd349884321d3e8af549f4d9da4456774e82ac8b",
+        "url": "https://api.github.com/repos/restify/node-restify/commits/bd349884321d3e8af549f4d9da4456774e82ac8b",
+        "html_url": "https://github.com/restify/node-restify/commit/bd349884321d3e8af549f4d9da4456774e82ac8b"
+      }
+    ]
+  },
+  {
+    "sha": "bd349884321d3e8af549f4d9da4456774e82ac8b",
+    "node_id": "MDY6Q29tbWl0MTY2MTc1ODpiZDM0OTg4NDMyMWQzZThhZjU0OWY0ZDlkYTQ0NTY3NzRlODJhYzhi",
+    "commit": {
+      "author": {
+        "name": "Guilherme Hermeto",
+        "email": "ghermeto@netflix.com",
+        "date": "2020-06-27T06:59:45Z"
+      },
+      "committer": {
+        "name": "Guilherme Hermeto",
+        "email": "ghermeto@users.noreply.github.com",
+        "date": "2020-07-10T04:44:18Z"
+      },
+      "message": "chore: drop support for node 8\n\nBREAKING CHANGE: drops suppoprt to node 8 and updates linting rules",
+      "tree": {
+        "sha": "919f58aeeda1e2fce785ee187bf41f2baa0f8200",
+        "url": "https://api.github.com/repos/restify/node-restify/git/trees/919f58aeeda1e2fce785ee187bf41f2baa0f8200"
+      },
+      "url": "https://api.github.com/repos/restify/node-restify/git/commits/bd349884321d3e8af549f4d9da4456774e82ac8b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/restify/node-restify/commits/bd349884321d3e8af549f4d9da4456774e82ac8b",
+    "html_url": "https://github.com/restify/node-restify/commit/bd349884321d3e8af549f4d9da4456774e82ac8b",
+    "comments_url": "https://api.github.com/repos/restify/node-restify/commits/bd349884321d3e8af549f4d9da4456774e82ac8b/comments",
+    "author": {
+      "login": "ghermeto",
+      "id": 224782,
+      "node_id": "MDQ6VXNlcjIyNDc4Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/224782?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ghermeto",
+      "html_url": "https://github.com/ghermeto",
+      "followers_url": "https://api.github.com/users/ghermeto/followers",
+      "following_url": "https://api.github.com/users/ghermeto/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ghermeto/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ghermeto/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ghermeto/subscriptions",
+      "organizations_url": "https://api.github.com/users/ghermeto/orgs",
+      "repos_url": "https://api.github.com/users/ghermeto/repos",
+      "events_url": "https://api.github.com/users/ghermeto/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ghermeto/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ghermeto",
+      "id": 224782,
+      "node_id": "MDQ6VXNlcjIyNDc4Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/224782?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ghermeto",
+      "html_url": "https://github.com/ghermeto",
+      "followers_url": "https://api.github.com/users/ghermeto/followers",
+      "following_url": "https://api.github.com/users/ghermeto/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ghermeto/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ghermeto/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ghermeto/subscriptions",
+      "organizations_url": "https://api.github.com/users/ghermeto/orgs",
+      "repos_url": "https://api.github.com/users/ghermeto/repos",
+      "events_url": "https://api.github.com/users/ghermeto/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ghermeto/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "982c7f8bdc671dc9fa35821f65ede3fc98bd2d34",
+        "url": "https://api.github.com/repos/restify/node-restify/commits/982c7f8bdc671dc9fa35821f65ede3fc98bd2d34",
+        "html_url": "https://github.com/restify/node-restify/commit/982c7f8bdc671dc9fa35821f65ede3fc98bd2d34"
+      }
+    ]
+  },
+  {
+    "sha": "982c7f8bdc671dc9fa35821f65ede3fc98bd2d34",
+    "node_id": "MDY6Q29tbWl0MTY2MTc1ODo5ODJjN2Y4YmRjNjcxZGM5ZmEzNTgyMWY2NWVkZTNmYzk4YmQyZDM0",
+    "commit": {
+      "author": {
+        "name": "Guilherme Hermeto",
+        "email": "ghermeto@users.noreply.github.com",
+        "date": "2020-07-06T18:49:14Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2020-07-06T18:49:14Z"
+      },
+      "message": "tests(ci): fix build (#1840)",
+      "tree": {
+        "sha": "8484aec02a4716a6e1c3eeee33a4cceff1a132a1",
+        "url": "https://api.github.com/repos/restify/node-restify/git/trees/8484aec02a4716a6e1c3eeee33a4cceff1a132a1"
+      },
+      "url": "https://api.github.com/repos/restify/node-restify/git/commits/982c7f8bdc671dc9fa35821f65ede3fc98bd2d34",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJfA3IqCRBK7hj4Ov3rIwAAdHIIACbDC8S1OxbbTaKJQGfOG67B\n/Tc3WzVU8M/Gzag7LX5sQ3TdyoTE+hBRkhtr1c+2eJmgsBHQjAGsj3s1SFE6LubV\nyJ4jIWygNHKTVMFRfUOS6c+v3wNwMzKNYWXAhDZXwgXEHyRMt2Oxm52XvczjFgRY\n2nOHiAuR6UA3xcH2NuzptenM3+cI7vrLn+oQB43fefqyQUuOugG1z7OLtIYMtedF\nQY5HZuVTzLlTL3doA2A5fXVkq5vL+rMc2rWOPC0JXw9l6RXAneC0D+OcqkKJ1set\nXr801sL7uJYU7S9mvvKb0vcONoJ1PtCKIJzaMZwE4DmMPFJtdIxxlKsY2RzioEY=\n=+Yq5\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 8484aec02a4716a6e1c3eeee33a4cceff1a132a1\nparent 885cecd7f9753b62faaa930f3cd39329057587f3\nauthor Guilherme Hermeto <ghermeto@users.noreply.github.com> 1594061354 -0700\ncommitter GitHub <noreply@github.com> 1594061354 -0700\n\ntests(ci): fix build (#1840)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/restify/node-restify/commits/982c7f8bdc671dc9fa35821f65ede3fc98bd2d34",
+    "html_url": "https://github.com/restify/node-restify/commit/982c7f8bdc671dc9fa35821f65ede3fc98bd2d34",
+    "comments_url": "https://api.github.com/repos/restify/node-restify/commits/982c7f8bdc671dc9fa35821f65ede3fc98bd2d34/comments",
+    "author": {
+      "login": "ghermeto",
+      "id": 224782,
+      "node_id": "MDQ6VXNlcjIyNDc4Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/224782?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ghermeto",
+      "html_url": "https://github.com/ghermeto",
+      "followers_url": "https://api.github.com/users/ghermeto/followers",
+      "following_url": "https://api.github.com/users/ghermeto/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ghermeto/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ghermeto/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ghermeto/subscriptions",
+      "organizations_url": "https://api.github.com/users/ghermeto/orgs",
+      "repos_url": "https://api.github.com/users/ghermeto/repos",
+      "events_url": "https://api.github.com/users/ghermeto/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ghermeto/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "885cecd7f9753b62faaa930f3cd39329057587f3",
+        "url": "https://api.github.com/repos/restify/node-restify/commits/885cecd7f9753b62faaa930f3cd39329057587f3",
+        "html_url": "https://github.com/restify/node-restify/commit/885cecd7f9753b62faaa930f3cd39329057587f3"
+      }
+    ]
+  },
+  {
+    "sha": "885cecd7f9753b62faaa930f3cd39329057587f3",
+    "node_id": "MDY6Q29tbWl0MTY2MTc1ODo4ODVjZWNkN2Y5NzUzYjYyZmFhYTkzMGYzY2QzOTMyOTA1NzU4N2Yz",
+    "commit": {
+      "author": {
+        "name": "Alex Liu",
+        "email": "DonutEspresso@users.noreply.github.com",
+        "date": "2020-07-02T04:34:26Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2020-07-02T04:34:26Z"
+      },
+      "message": "feat: send 500s for unhandled requests (#1777)",
+      "tree": {
+        "sha": "72eaf0b4b1ab7c927e010cac18c247066f1d61c3",
+        "url": "https://api.github.com/repos/restify/node-restify/git/trees/72eaf0b4b1ab7c927e010cac18c247066f1d61c3"
+      },
+      "url": "https://api.github.com/repos/restify/node-restify/git/commits/885cecd7f9753b62faaa930f3cd39329057587f3",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJe/WPSCRBK7hj4Ov3rIwAAdHIIAGYXBseDMSV0Ifo7KOrJjE0F\n0BpAUdYlsqsOSwN0Av0a9+oHlLom4dXVKxq/W9Tmz6UNHsPIVGYSH0rTjPse9AEH\nz6RMPkwZvbbQWQCu3iX/JIH5goMdQYVG9J8KhNV6LhlBCOBkBImnsbgH98AlmNTN\nsvbVNNn0/NnEbaE0TfVemgvmOj8CVo2gS12Y0+Znd/jm9Vhve3A4pZAkdIwJEwyC\nPBLIU91HDoCShHfOCpA/FLTJPOy6ThaGvCmJoVE2nDuYE8dF+sYX2ia8ihY3fW9J\nzz6qKgDwZa3z/GKoR2fEi3VbHP/VwbL08IQM+Zn2tPDlMwv/6LHG25HyD1BE4/4=\n=0o3n\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 72eaf0b4b1ab7c927e010cac18c247066f1d61c3\nparent 35871c9dd608f3509132cbc62e4720a87ff4bfe1\nauthor Alex Liu <DonutEspresso@users.noreply.github.com> 1593664466 -0700\ncommitter GitHub <noreply@github.com> 1593664466 -0700\n\nfeat: send 500s for unhandled requests (#1777)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/restify/node-restify/commits/885cecd7f9753b62faaa930f3cd39329057587f3",
+    "html_url": "https://github.com/restify/node-restify/commit/885cecd7f9753b62faaa930f3cd39329057587f3",
+    "comments_url": "https://api.github.com/repos/restify/node-restify/commits/885cecd7f9753b62faaa930f3cd39329057587f3/comments",
+    "author": {
+      "login": "DonutEspresso",
+      "id": 2381315,
+      "node_id": "MDQ6VXNlcjIzODEzMTU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2381315?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DonutEspresso",
+      "html_url": "https://github.com/DonutEspresso",
+      "followers_url": "https://api.github.com/users/DonutEspresso/followers",
+      "following_url": "https://api.github.com/users/DonutEspresso/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DonutEspresso/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DonutEspresso/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DonutEspresso/subscriptions",
+      "organizations_url": "https://api.github.com/users/DonutEspresso/orgs",
+      "repos_url": "https://api.github.com/users/DonutEspresso/repos",
+      "events_url": "https://api.github.com/users/DonutEspresso/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DonutEspresso/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "35871c9dd608f3509132cbc62e4720a87ff4bfe1",
+        "url": "https://api.github.com/repos/restify/node-restify/commits/35871c9dd608f3509132cbc62e4720a87ff4bfe1",
+        "html_url": "https://github.com/restify/node-restify/commit/35871c9dd608f3509132cbc62e4720a87ff4bfe1"
+      }
+    ]
+  },
+  {
+    "sha": "35871c9dd608f3509132cbc62e4720a87ff4bfe1",
+    "node_id": "MDY6Q29tbWl0MTY2MTc1ODozNTg3MWM5ZGQ2MDhmMzUwOTEzMmNiYzYyZTQ3MjBhODdmZjRiZmUx",
+    "commit": {
+      "author": {
+        "name": "Guilherme Hermeto",
+        "email": "ghermeto@users.noreply.github.com",
+        "date": "2020-06-28T05:59:24Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2020-06-28T05:59:24Z"
+      },
+      "message": "chore: use github ci (#1836)\n\nleaving Travis CI until we gain confidence in GitHub Actions as CI.",
+      "tree": {
+        "sha": "c4bc1e5df5a23779bf721ff63ff32fcbe30d6291",
+        "url": "https://api.github.com/repos/restify/node-restify/git/trees/c4bc1e5df5a23779bf721ff63ff32fcbe30d6291"
+      },
+      "url": "https://api.github.com/repos/restify/node-restify/git/commits/35871c9dd608f3509132cbc62e4720a87ff4bfe1",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJe+DG8CRBK7hj4Ov3rIwAAdHIIAKwzpLuBpTmiwHPwzUIFpPn6\nMzxGoIh2UFY5Q/lF7b3zafyb2I/k4+gpXC+LZ3UpVYZsumfD+t36ALjBqo0i3i+7\nLDAzPZqBhshORwcdpnyED4HyCKQwwIxuY3NDFEFPFuqGWp0LRT1j2yva7N89ldjk\nmR3D3ZTf0dz6jISxhL5ovGvKiJth4Dr/N9xwO70YDkJ98n7wwWVUDlSdPjUqk3E3\nycrfop0mGPb8iVWyoR3nGsu+kMSxHSecN03kNKvurzMM1+Vse+smpfpmz+rV7x7S\n8bCqum4kibSNknIEciUwKlDUd31dRpY7EYgi+aYZzauBQBHsKYrjZNhAtpMGY3Q=\n=7e93\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree c4bc1e5df5a23779bf721ff63ff32fcbe30d6291\nparent 75aa68963b803ebe73a3f9e6d75256c159c1a90f\nauthor Guilherme Hermeto <ghermeto@users.noreply.github.com> 1593323964 -0700\ncommitter GitHub <noreply@github.com> 1593323964 -0700\n\nchore: use github ci (#1836)\n\nleaving Travis CI until we gain confidence in GitHub Actions as CI."
+      }
+    },
+    "url": "https://api.github.com/repos/restify/node-restify/commits/35871c9dd608f3509132cbc62e4720a87ff4bfe1",
+    "html_url": "https://github.com/restify/node-restify/commit/35871c9dd608f3509132cbc62e4720a87ff4bfe1",
+    "comments_url": "https://api.github.com/repos/restify/node-restify/commits/35871c9dd608f3509132cbc62e4720a87ff4bfe1/comments",
+    "author": {
+      "login": "ghermeto",
+      "id": 224782,
+      "node_id": "MDQ6VXNlcjIyNDc4Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/224782?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ghermeto",
+      "html_url": "https://github.com/ghermeto",
+      "followers_url": "https://api.github.com/users/ghermeto/followers",
+      "following_url": "https://api.github.com/users/ghermeto/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ghermeto/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ghermeto/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ghermeto/subscriptions",
+      "organizations_url": "https://api.github.com/users/ghermeto/orgs",
+      "repos_url": "https://api.github.com/users/ghermeto/repos",
+      "events_url": "https://api.github.com/users/ghermeto/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ghermeto/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "75aa68963b803ebe73a3f9e6d75256c159c1a90f",
+        "url": "https://api.github.com/repos/restify/node-restify/commits/75aa68963b803ebe73a3f9e6d75256c159c1a90f",
+        "html_url": "https://github.com/restify/node-restify/commit/75aa68963b803ebe73a3f9e6d75256c159c1a90f"
+      }
+    ]
+  },
+  {
+    "sha": "75aa68963b803ebe73a3f9e6d75256c159c1a90f",
+    "node_id": "MDY6Q29tbWl0MTY2MTc1ODo3NWFhNjg5NjNiODAzZWJlNzNhM2Y5ZTZkNzUyNTZjMTU5YzFhOTBm",
+    "commit": {
+      "author": {
+        "name": "Guilherme Hermeto",
+        "email": "ghermeto@users.noreply.github.com",
+        "date": "2020-06-28T00:25:43Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2020-06-28T00:25:43Z"
+      },
+      "message": "chore: use release-please-action (#1834)\n\nuses GCP's  release-please-action to generate an automated release\r\nPR with CHANGELOG and automated version bumping.",
+      "tree": {
+        "sha": "df032035a0ace8ab8041f3d9c6dcc14da0d24d7e",
+        "url": "https://api.github.com/repos/restify/node-restify/git/trees/df032035a0ace8ab8041f3d9c6dcc14da0d24d7e"
+      },
+      "url": "https://api.github.com/repos/restify/node-restify/git/commits/75aa68963b803ebe73a3f9e6d75256c159c1a90f",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJe9+OHCRBK7hj4Ov3rIwAAdHIIABlQIHGI6TOiZCf/bDtng24y\np179saX/OmajP81617PBy3sKWJGy2aYBgpd+YiR12/hHU6Prry5hPW4YDl7I8Mb+\n5Do1PtUuZ2Zt+hpswX1NXcdZZV6K1sJmQkKBbdDMKbw0z8Dy5L+cpbIRdPhduTFK\nzvE4loDB+Y/6bV7Jk0G2b61+XvBk9XbPTU6LvfyQ7ZBibmEOOSvV73ZeyXO6wVCO\nb/qBdH7jTUAVVVBZb1dOWRpgopxEOwKCXxyIAeyGMW1X0bfg7korOZZLqhZoVKEM\nuatrLYUSCXBwMsvBx6ZwjSd71qUHj7VQRkqMyTu/wwuPKVqBouJKOASxbaUAwfs=\n=uEBy\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree df032035a0ace8ab8041f3d9c6dcc14da0d24d7e\nparent c4d71a87db73d8f9e8263daca2b9e8f55b8513f4\nauthor Guilherme Hermeto <ghermeto@users.noreply.github.com> 1593303943 -0700\ncommitter GitHub <noreply@github.com> 1593303943 -0700\n\nchore: use release-please-action (#1834)\n\nuses GCP's  release-please-action to generate an automated release\r\nPR with CHANGELOG and automated version bumping."
+      }
+    },
+    "url": "https://api.github.com/repos/restify/node-restify/commits/75aa68963b803ebe73a3f9e6d75256c159c1a90f",
+    "html_url": "https://github.com/restify/node-restify/commit/75aa68963b803ebe73a3f9e6d75256c159c1a90f",
+    "comments_url": "https://api.github.com/repos/restify/node-restify/commits/75aa68963b803ebe73a3f9e6d75256c159c1a90f/comments",
+    "author": {
+      "login": "ghermeto",
+      "id": 224782,
+      "node_id": "MDQ6VXNlcjIyNDc4Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/224782?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ghermeto",
+      "html_url": "https://github.com/ghermeto",
+      "followers_url": "https://api.github.com/users/ghermeto/followers",
+      "following_url": "https://api.github.com/users/ghermeto/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ghermeto/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ghermeto/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ghermeto/subscriptions",
+      "organizations_url": "https://api.github.com/users/ghermeto/orgs",
+      "repos_url": "https://api.github.com/users/ghermeto/repos",
+      "events_url": "https://api.github.com/users/ghermeto/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ghermeto/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c4d71a87db73d8f9e8263daca2b9e8f55b8513f4",
+        "url": "https://api.github.com/repos/restify/node-restify/commits/c4d71a87db73d8f9e8263daca2b9e8f55b8513f4",
+        "html_url": "https://github.com/restify/node-restify/commit/c4d71a87db73d8f9e8263daca2b9e8f55b8513f4"
+      }
+    ]
+  },
+  {
+    "sha": "c4d71a87db73d8f9e8263daca2b9e8f55b8513f4",
+    "node_id": "MDY6Q29tbWl0MTY2MTc1ODpjNGQ3MWE4N2RiNzNkOGY5ZTgyNjNkYWNhMmI5ZThmNTViODUxM2Y0",
+    "commit": {
+      "author": {
+        "name": "Ivan Pintado",
+        "email": "ivan.pintadoh@gmail.com",
+        "date": "2020-06-27T07:43:50Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2020-06-27T07:43:50Z"
+      },
+      "message": "docs(index): Remove restify.errors from examples (#1831)\n\nThe restify.errors object was removed long ago but still used here.\r\nThis seems to cause some confusion to users that copy paste the code to try it.",
+      "tree": {
+        "sha": "dd7d649604ef257ff535ec6d216735cb71902230",
+        "url": "https://api.github.com/repos/restify/node-restify/git/trees/dd7d649604ef257ff535ec6d216735cb71902230"
+      },
+      "url": "https://api.github.com/repos/restify/node-restify/git/commits/c4d71a87db73d8f9e8263daca2b9e8f55b8513f4",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJe9vi2CRBK7hj4Ov3rIwAAdHIIADZeoqQh7ThgR1ipTm4xUZz9\n44e4DPeR3m0OocdSU6ky/jonaMCmUXJnEBu+T1LNSsMRI5TLOw6yrl64EcyEBTu4\nEO17OB3Ac3RumnikqVXvGGNxyi6ucl3ZbFIxXPjC6wClHCWatONmdbDInQhKWUXe\nSO58H3W1Cxe/Zlys7zLP3Sg3AIkeHKvv99fqIrT7m5oVrvm6csrc25PHOsbY+oSN\nOtRZ9XhSJHWoHI96BxUftEgFCzyV8LOW9RRaobDXeyfkhD8G91X/YBJUkXGbDYm6\nNvgLKgasIzqurZvbb7wX6+ir8I5v5SrGnd8lK3osnifarZFK7wQu9jFBzvjf8Q0=\n=TWO+\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree dd7d649604ef257ff535ec6d216735cb71902230\nparent d9b27c602e260fc6c4f0e18e8b6835e89fa2adca\nauthor Ivan Pintado <ivan.pintadoh@gmail.com> 1593243830 -0700\ncommitter GitHub <noreply@github.com> 1593243830 -0700\n\ndocs(index): Remove restify.errors from examples (#1831)\n\nThe restify.errors object was removed long ago but still used here.\r\nThis seems to cause some confusion to users that copy paste the code to try it."
+      }
+    },
+    "url": "https://api.github.com/repos/restify/node-restify/commits/c4d71a87db73d8f9e8263daca2b9e8f55b8513f4",
+    "html_url": "https://github.com/restify/node-restify/commit/c4d71a87db73d8f9e8263daca2b9e8f55b8513f4",
+    "comments_url": "https://api.github.com/repos/restify/node-restify/commits/c4d71a87db73d8f9e8263daca2b9e8f55b8513f4/comments",
+    "author": {
+      "login": "ivanph",
+      "id": 1133538,
+      "node_id": "MDQ6VXNlcjExMzM1Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1133538?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ivanph",
+      "html_url": "https://github.com/ivanph",
+      "followers_url": "https://api.github.com/users/ivanph/followers",
+      "following_url": "https://api.github.com/users/ivanph/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ivanph/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ivanph/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ivanph/subscriptions",
+      "organizations_url": "https://api.github.com/users/ivanph/orgs",
+      "repos_url": "https://api.github.com/users/ivanph/repos",
+      "events_url": "https://api.github.com/users/ivanph/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ivanph/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d9b27c602e260fc6c4f0e18e8b6835e89fa2adca",
+        "url": "https://api.github.com/repos/restify/node-restify/commits/d9b27c602e260fc6c4f0e18e8b6835e89fa2adca",
+        "html_url": "https://github.com/restify/node-restify/commit/d9b27c602e260fc6c4f0e18e8b6835e89fa2adca"
+      }
+    ]
+  },
+  {
+    "sha": "d9b27c602e260fc6c4f0e18e8b6835e89fa2adca",
+    "node_id": "MDY6Q29tbWl0MTY2MTc1ODpkOWIyN2M2MDJlMjYwZmM2YzRmMGUxOGU4YjY4MzVlODlmYTJhZGNh",
+    "commit": {
+      "author": {
+        "name": "Snyk bot",
+        "email": "github+bot@snyk.io",
+        "date": "2020-06-27T07:16:00Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2020-06-27T07:16:00Z"
+      },
+      "message": "fix: examples/todoapp/package.json to reduce vulnerabilities (#1832)\n\nThe following vulnerabilities are fixed with an upgrade:\r\n- https://snyk.io/vuln/SNYK-JS-BUNYAN-573166",
+      "tree": {
+        "sha": "f12caa8adb52284cadc7f6ef39d4786cec4c2305",
+        "url": "https://api.github.com/repos/restify/node-restify/git/trees/f12caa8adb52284cadc7f6ef39d4786cec4c2305"
+      },
+      "url": "https://api.github.com/repos/restify/node-restify/git/commits/d9b27c602e260fc6c4f0e18e8b6835e89fa2adca",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJe9vIwCRBK7hj4Ov3rIwAAdHIIAK8I0ErCOVCAA2EPFb6Y/JXJ\n4q+rMzYvteb4tXDc8k2PZOWtQzQ0JAFyYlGTHw1l+6RaaeLwoHofiCpv7zqxo/e8\nkbBNvEz6QdtgbwNltxsJAhDwvrTKQCd/AA0rfErbOiV2HMYtWoEiL0gmRkN4bl1i\nKFOhS9vDXcJI745PUStsChas67N2WKtI1pW4UFTjud429J+KrRBNE5sdhP+DFaL7\nBzPIX5JUtpQU5puifFp+DgryNYcEdI2y3W87ZnNKnoUsOEqGcKcH4Dc6IcTtpAsv\n0kLNkgfZOjnhXSn4JTnBxi5XsDdAR6qLskbHe4we6lc+5LWaS1YsT1ocpgPGFK4=\n=NHuK\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree f12caa8adb52284cadc7f6ef39d4786cec4c2305\nparent acd1e143e4e2ba76867031521eca050297795bee\nauthor Snyk bot <github+bot@snyk.io> 1593242160 +0300\ncommitter GitHub <noreply@github.com> 1593242160 -0700\n\nfix: examples/todoapp/package.json to reduce vulnerabilities (#1832)\n\nThe following vulnerabilities are fixed with an upgrade:\r\n- https://snyk.io/vuln/SNYK-JS-BUNYAN-573166"
+      }
+    },
+    "url": "https://api.github.com/repos/restify/node-restify/commits/d9b27c602e260fc6c4f0e18e8b6835e89fa2adca",
+    "html_url": "https://github.com/restify/node-restify/commit/d9b27c602e260fc6c4f0e18e8b6835e89fa2adca",
+    "comments_url": "https://api.github.com/repos/restify/node-restify/commits/d9b27c602e260fc6c4f0e18e8b6835e89fa2adca/comments",
+    "author": {
+      "login": "snyk-bot",
+      "id": 19733683,
+      "node_id": "MDQ6VXNlcjE5NzMzNjgz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19733683?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/snyk-bot",
+      "html_url": "https://github.com/snyk-bot",
+      "followers_url": "https://api.github.com/users/snyk-bot/followers",
+      "following_url": "https://api.github.com/users/snyk-bot/following{/other_user}",
+      "gists_url": "https://api.github.com/users/snyk-bot/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/snyk-bot/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/snyk-bot/subscriptions",
+      "organizations_url": "https://api.github.com/users/snyk-bot/orgs",
+      "repos_url": "https://api.github.com/users/snyk-bot/repos",
+      "events_url": "https://api.github.com/users/snyk-bot/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/snyk-bot/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "acd1e143e4e2ba76867031521eca050297795bee",
+        "url": "https://api.github.com/repos/restify/node-restify/commits/acd1e143e4e2ba76867031521eca050297795bee",
+        "html_url": "https://github.com/restify/node-restify/commit/acd1e143e4e2ba76867031521eca050297795bee"
+      }
+    ]
+  },
+  {
+    "sha": "acd1e143e4e2ba76867031521eca050297795bee",
+    "node_id": "MDY6Q29tbWl0MTY2MTc1ODphY2QxZTE0M2U0ZTJiYTc2ODY3MDMxNTIxZWNhMDUwMjk3Nzk1YmVl",
+    "commit": {
+      "author": {
+        "name": "Matheus Marchini",
+        "email": "mmarchini@netflix.com",
+        "date": "2020-04-01T21:11:50Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2020-04-01T21:11:50Z"
+      },
+      "message": "chore(git): use new GitHub issue templates (#1822)\n\nGitHub recently added support for multiple issue templates. Using the\r\nbuiltin feature should improve our users experience when opening an\r\nissue.\r\n\r\nSigned-off-by: Matheus Marchini <mmarchini@netflix.com>",
+      "tree": {
+        "sha": "d488e121bdc01d3c9fd000c9f6ba2320ebf2d2de",
+        "url": "https://api.github.com/repos/restify/node-restify/git/trees/d488e121bdc01d3c9fd000c9f6ba2320ebf2d2de"
+      },
+      "url": "https://api.github.com/repos/restify/node-restify/git/commits/acd1e143e4e2ba76867031521eca050297795bee",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJehQOWCRBK7hj4Ov3rIwAAdHIIABRBbRZD5q0OQfHxgb6FWlQ2\nW5HEgwxYnmpyDrKb2mpyJUSBCgrIZfqJYea+V52jzy7j6pmr6lDnTHeuAuI3pa+h\nIG6Bh8g5UZBZgtV7KAQI3vWNLxs3pba1A7+yQZNmNvAfvCBgn3vS14MbX+AxYOIl\noBippWekn2qHMbuILTM+QeEi7mWFPE8h/vmpIrJ4OYrA2Zl7nPy3xrdCOhZ1nnDT\nsnyHgrnHRbNXxxf8VTAbuH2WMXwAJqDsHNGVJ1XT1eWGZr+CV/lRXDO63IoOt126\n/n0JG2gDefJ0r61rjX99UvjoH8K16dhZTKeafPAU43H5dGf7tsb7jlV29UEz3ho=\n=LJ9k\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree d488e121bdc01d3c9fd000c9f6ba2320ebf2d2de\nparent 361f83e5acd814881c82add3e1bd06ce9ded777c\nauthor Matheus Marchini <mmarchini@netflix.com> 1585775510 -0700\ncommitter GitHub <noreply@github.com> 1585775510 -0700\n\nchore(git): use new GitHub issue templates (#1822)\n\nGitHub recently added support for multiple issue templates. Using the\r\nbuiltin feature should improve our users experience when opening an\r\nissue.\r\n\r\nSigned-off-by: Matheus Marchini <mmarchini@netflix.com>"
+      }
+    },
+    "url": "https://api.github.com/repos/restify/node-restify/commits/acd1e143e4e2ba76867031521eca050297795bee",
+    "html_url": "https://github.com/restify/node-restify/commit/acd1e143e4e2ba76867031521eca050297795bee",
+    "comments_url": "https://api.github.com/repos/restify/node-restify/commits/acd1e143e4e2ba76867031521eca050297795bee/comments",
+    "author": {
+      "login": "mmarchini",
+      "id": 4048656,
+      "node_id": "MDQ6VXNlcjQwNDg2NTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4048656?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mmarchini",
+      "html_url": "https://github.com/mmarchini",
+      "followers_url": "https://api.github.com/users/mmarchini/followers",
+      "following_url": "https://api.github.com/users/mmarchini/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mmarchini/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mmarchini/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mmarchini/subscriptions",
+      "organizations_url": "https://api.github.com/users/mmarchini/orgs",
+      "repos_url": "https://api.github.com/users/mmarchini/repos",
+      "events_url": "https://api.github.com/users/mmarchini/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mmarchini/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "361f83e5acd814881c82add3e1bd06ce9ded777c",
+        "url": "https://api.github.com/repos/restify/node-restify/commits/361f83e5acd814881c82add3e1bd06ce9ded777c",
+        "html_url": "https://github.com/restify/node-restify/commit/361f83e5acd814881c82add3e1bd06ce9ded777c"
+      }
+    ]
+  },
+  {
+    "sha": "361f83e5acd814881c82add3e1bd06ce9ded777c",
+    "node_id": "MDY6Q29tbWl0MTY2MTc1ODozNjFmODNlNWFjZDgxNDg4MWM4MmFkZDNlMWJkMDZjZTlkZWQ3Nzdj",
+    "commit": {
+      "author": {
+        "name": "Matheus Marchini",
+        "email": "mmarchini@netflix.com",
+        "date": "2020-04-01T21:07:14Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2020-04-01T21:07:14Z"
+      },
+      "message": "feat(deps): replace cover/istanbul with nyc (#1823)\n\n`istanbul` is not supported anymore, and the last version of `cover` was\r\nreleased seven years ago. `cover` also depends on a vulnerable package\r\n(which makes `npm audit` noisy). Since `make cover` was not working\r\nanymore, replacing it with `nyc` (`istanbul`'s successor) should be\r\nstraightforward.\r\n\r\nSigned-off-by: Matheus Marchini <mmarchini@netflix.com>",
+      "tree": {
+        "sha": "4adbfe86bddf6b52b075635ba3acb016ee8b4f73",
+        "url": "https://api.github.com/repos/restify/node-restify/git/trees/4adbfe86bddf6b52b075635ba3acb016ee8b4f73"
+      },
+      "url": "https://api.github.com/repos/restify/node-restify/git/commits/361f83e5acd814881c82add3e1bd06ce9ded777c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJehQKCCRBK7hj4Ov3rIwAAdHIIAHxJNZA7dd9TGH0m/81VrwzZ\nH9aaKebE95u89Hv1z0pLb/RyBeer+YrgjPsoJFQgf+XW+KqP0QXPe1/sfvl8bspY\nAju4iXA8DsBOaYbbkplZ0LeN+Jd0FhDAgCoLgfdv+VqtswhwpyEAsnzdryrEwwaD\ntzucvi6Evco5P7hOBnU93A5WMoMKXt43fLqCsQZtz7T2jbFjQAYuSPI3CbvVkfBP\ntstNezrZJ9aKzKj57JUJuFZdeYSds/267oGAHKDt+CGfjRaViT/WGeE0Mcs7xcI5\n21fKCf6WAvB7kqiqDr+8WV8inIkL2ExaGWjp37aWCo5SMkoiEkITD6cKVqjYjUU=\n=and8\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 4adbfe86bddf6b52b075635ba3acb016ee8b4f73\nparent 1892c7883195d7d56dc4e232489fa6f855efce45\nauthor Matheus Marchini <mmarchini@netflix.com> 1585775234 -0700\ncommitter GitHub <noreply@github.com> 1585775234 -0700\n\nfeat(deps): replace cover/istanbul with nyc (#1823)\n\n`istanbul` is not supported anymore, and the last version of `cover` was\r\nreleased seven years ago. `cover` also depends on a vulnerable package\r\n(which makes `npm audit` noisy). Since `make cover` was not working\r\nanymore, replacing it with `nyc` (`istanbul`'s successor) should be\r\nstraightforward.\r\n\r\nSigned-off-by: Matheus Marchini <mmarchini@netflix.com>"
+      }
+    },
+    "url": "https://api.github.com/repos/restify/node-restify/commits/361f83e5acd814881c82add3e1bd06ce9ded777c",
+    "html_url": "https://github.com/restify/node-restify/commit/361f83e5acd814881c82add3e1bd06ce9ded777c",
+    "comments_url": "https://api.github.com/repos/restify/node-restify/commits/361f83e5acd814881c82add3e1bd06ce9ded777c/comments",
+    "author": {
+      "login": "mmarchini",
+      "id": 4048656,
+      "node_id": "MDQ6VXNlcjQwNDg2NTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4048656?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mmarchini",
+      "html_url": "https://github.com/mmarchini",
+      "followers_url": "https://api.github.com/users/mmarchini/followers",
+      "following_url": "https://api.github.com/users/mmarchini/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mmarchini/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mmarchini/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mmarchini/subscriptions",
+      "organizations_url": "https://api.github.com/users/mmarchini/orgs",
+      "repos_url": "https://api.github.com/users/mmarchini/repos",
+      "events_url": "https://api.github.com/users/mmarchini/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mmarchini/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1892c7883195d7d56dc4e232489fa6f855efce45",
+        "url": "https://api.github.com/repos/restify/node-restify/commits/1892c7883195d7d56dc4e232489fa6f855efce45",
+        "html_url": "https://github.com/restify/node-restify/commit/1892c7883195d7d56dc4e232489fa6f855efce45"
+      }
+    ]
+  },
+  {
+    "sha": "1892c7883195d7d56dc4e232489fa6f855efce45",
+    "node_id": "MDY6Q29tbWl0MTY2MTc1ODoxODkyYzc4ODMxOTVkN2Q1NmRjNGUyMzI0ODlmYTZmODU1ZWZjZTQ1",
+    "commit": {
+      "author": {
+        "name": "Matheus Marchini",
+        "email": "mmarchini@netflix.com",
+        "date": "2020-04-01T21:06:36Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2020-04-01T21:06:36Z"
+      },
+      "message": "chore(deps): upgrade mocha (#1824)",
+      "tree": {
+        "sha": "161f3f36b3348600ca3eb89f1881f8fc4de43388",
+        "url": "https://api.github.com/repos/restify/node-restify/git/trees/161f3f36b3348600ca3eb89f1881f8fc4de43388"
+      },
+      "url": "https://api.github.com/repos/restify/node-restify/git/commits/1892c7883195d7d56dc4e232489fa6f855efce45",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJehQJcCRBK7hj4Ov3rIwAAdHIIACQxkapG5l/CRmKp3oWfVOld\nZjaMTNwGmHP00oOdmohwrDHZOFv+PNkKCyOJOdX4DyqIbKWv08WIz5atOQ7/lJ8j\nBsX29r9fFWlOju6ba/tiPj6pR0QjgEcDWti+wuX6Kc5jirit3QxamfMETFHJZFqm\n416oJNNCAaW91MO3qaFeEeNcbxcxsABISs/ZO70FdJczawTU0ZqoGcb4KyQ2vTZ3\nfxV1goouVsEkVvX+I5as3Mv1H/tI6C2zOFZAGCukz7VnNWtUBM4nMU9KIWFPZDok\nvZ25pOC5xwGE3pf0+Vucnpa1Oj89a2iWjACRQ9U3PHfDXCuT3xQfKjKGUecCmJA=\n=vzgd\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 161f3f36b3348600ca3eb89f1881f8fc4de43388\nparent e8516c3735487ad5ebd332bc781404654c8c3cec\nauthor Matheus Marchini <mmarchini@netflix.com> 1585775196 -0700\ncommitter GitHub <noreply@github.com> 1585775196 -0700\n\nchore(deps): upgrade mocha (#1824)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/restify/node-restify/commits/1892c7883195d7d56dc4e232489fa6f855efce45",
+    "html_url": "https://github.com/restify/node-restify/commit/1892c7883195d7d56dc4e232489fa6f855efce45",
+    "comments_url": "https://api.github.com/repos/restify/node-restify/commits/1892c7883195d7d56dc4e232489fa6f855efce45/comments",
+    "author": {
+      "login": "mmarchini",
+      "id": 4048656,
+      "node_id": "MDQ6VXNlcjQwNDg2NTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4048656?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mmarchini",
+      "html_url": "https://github.com/mmarchini",
+      "followers_url": "https://api.github.com/users/mmarchini/followers",
+      "following_url": "https://api.github.com/users/mmarchini/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mmarchini/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mmarchini/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mmarchini/subscriptions",
+      "organizations_url": "https://api.github.com/users/mmarchini/orgs",
+      "repos_url": "https://api.github.com/users/mmarchini/repos",
+      "events_url": "https://api.github.com/users/mmarchini/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mmarchini/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e8516c3735487ad5ebd332bc781404654c8c3cec",
+        "url": "https://api.github.com/repos/restify/node-restify/commits/e8516c3735487ad5ebd332bc781404654c8c3cec",
+        "html_url": "https://github.com/restify/node-restify/commit/e8516c3735487ad5ebd332bc781404654c8c3cec"
+      }
+    ]
+  },
+  {
+    "sha": "e8516c3735487ad5ebd332bc781404654c8c3cec",
+    "node_id": "MDY6Q29tbWl0MTY2MTc1ODplODUxNmMzNzM1NDg3YWQ1ZWJkMzMyYmM3ODE0MDQ2NTRjOGMzY2Vj",
+    "commit": {
+      "author": {
+        "name": "William Blankenship",
+        "email": "code@blankenship.io",
+        "date": "2020-03-12T18:21:47Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2020-03-12T18:21:47Z"
+      },
+      "message": "fix(npm): exclude extraneous files (#1818)",
+      "tree": {
+        "sha": "c610649c7990151b5f17daa3791687c67731cd49",
+        "url": "https://api.github.com/repos/restify/node-restify/git/trees/c610649c7990151b5f17daa3791687c67731cd49"
+      },
+      "url": "https://api.github.com/repos/restify/node-restify/git/commits/e8516c3735487ad5ebd332bc781404654c8c3cec",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJean27CRBK7hj4Ov3rIwAAdHIIAHRSPiSC/nu+d6ECZ47sssOy\n5Xut0sKzsUL+Hv1p0tNSkpKMOPXuQt+4kmQqQNNd90k92WVP5BAHF6PYaJYEl+TM\nA3iWGuJCuMyL0ApKM1TziWJezjg9kUhaVfSMen+Y3WOp6wuWhywHpp+mGZniB/Xx\nU+eC+LRZevRMyAWQRm/5cvrOGFmDU9jijl1xmAh9PQcVp6Ph7uu7K0BSx6LSJ4xK\n76V+6v0ccUTS8Z0K947U3jqjcP1qbP6tPdvbjytRjWmNHlqRPV/tRTQ1CxLCvMBx\ndE9xctD0+XBDigAe8SFn4u5zWmyLyaZY09Y7p2ggaiEC/VtWYYs1MPS1TUN1YRU=\n=ZPvC\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree c610649c7990151b5f17daa3791687c67731cd49\nparent 4a70d9af83c46645659b5b96a872a9593c12404b\nauthor William Blankenship <code@blankenship.io> 1584037307 -0700\ncommitter GitHub <noreply@github.com> 1584037307 -0700\n\nfix(npm): exclude extraneous files (#1818)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/restify/node-restify/commits/e8516c3735487ad5ebd332bc781404654c8c3cec",
+    "html_url": "https://github.com/restify/node-restify/commit/e8516c3735487ad5ebd332bc781404654c8c3cec",
+    "comments_url": "https://api.github.com/repos/restify/node-restify/commits/e8516c3735487ad5ebd332bc781404654c8c3cec/comments",
+    "author": {
+      "login": "retrohacker",
+      "id": 1081565,
+      "node_id": "MDQ6VXNlcjEwODE1NjU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1081565?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/retrohacker",
+      "html_url": "https://github.com/retrohacker",
+      "followers_url": "https://api.github.com/users/retrohacker/followers",
+      "following_url": "https://api.github.com/users/retrohacker/following{/other_user}",
+      "gists_url": "https://api.github.com/users/retrohacker/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/retrohacker/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/retrohacker/subscriptions",
+      "organizations_url": "https://api.github.com/users/retrohacker/orgs",
+      "repos_url": "https://api.github.com/users/retrohacker/repos",
+      "events_url": "https://api.github.com/users/retrohacker/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/retrohacker/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4a70d9af83c46645659b5b96a872a9593c12404b",
+        "url": "https://api.github.com/repos/restify/node-restify/commits/4a70d9af83c46645659b5b96a872a9593c12404b",
+        "html_url": "https://github.com/restify/node-restify/commit/4a70d9af83c46645659b5b96a872a9593c12404b"
+      }
+    ]
+  },
+  {
+    "sha": "4a70d9af83c46645659b5b96a872a9593c12404b",
+    "node_id": "MDY6Q29tbWl0MTY2MTc1ODo0YTcwZDlhZjgzYzQ2NjQ1NjU5YjViOTZhODcyYTk1OTNjMTI0MDRi",
+    "commit": {
+      "author": {
+        "name": "Abdullah Ahsan",
+        "email": "abdullahahsan47@gmail.com",
+        "date": "2020-03-03T20:59:08Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2020-03-03T20:59:08Z"
+      },
+      "message": "docs(index): fix link for Error Handling section (#1805)",
+      "tree": {
+        "sha": "88e738c9ebcc62d5a47218c9c484edbe89796fe1",
+        "url": "https://api.github.com/repos/restify/node-restify/git/trees/88e738c9ebcc62d5a47218c9c484edbe89796fe1"
+      },
+      "url": "https://api.github.com/repos/restify/node-restify/git/commits/4a70d9af83c46645659b5b96a872a9593c12404b",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJeXsUdCRBK7hj4Ov3rIwAAdHIIAC79DBvtwRiyW7D3EzHTD7Vx\nnL3VQqSUchls7FBJ/ih0o2StprI/BE0thNFYPy9qzNXwGHkx4oTmzPVo3hzbR193\nZ/X+KKZbwwlfxnooi6tuvEX6t1vP6p+2IhdZNr9pBqp+wOBgDemmJ4p444snPV3P\ncEqwleNOo6j76cUpckS/xhlhGp4qetwFLyO6aF79lb4ujfEfsgIReYvvBOag2qnj\nurm6PpxzI+568ybX0memhGX+gUWcu0XCccBAAHruXJaZQSfBka7phBcrs0t/e8GU\n3/3Do//eCPswLSIZ069ZAy3NhFnLmZqW51PIh/ibGHmX9AmwkEA7cvLFrEyjj9s=\n=vjeY\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 88e738c9ebcc62d5a47218c9c484edbe89796fe1\nparent 886d2f9312c324587f8edf9bb5ef561224a478e7\nauthor Abdullah Ahsan <abdullahahsan47@gmail.com> 1583269148 +0100\ncommitter GitHub <noreply@github.com> 1583269148 -0800\n\ndocs(index): fix link for Error Handling section (#1805)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/restify/node-restify/commits/4a70d9af83c46645659b5b96a872a9593c12404b",
+    "html_url": "https://github.com/restify/node-restify/commit/4a70d9af83c46645659b5b96a872a9593c12404b",
+    "comments_url": "https://api.github.com/repos/restify/node-restify/commits/4a70d9af83c46645659b5b96a872a9593c12404b/comments",
+    "author": {
+      "login": "ahsan",
+      "id": 8522506,
+      "node_id": "MDQ6VXNlcjg1MjI1MDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8522506?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ahsan",
+      "html_url": "https://github.com/ahsan",
+      "followers_url": "https://api.github.com/users/ahsan/followers",
+      "following_url": "https://api.github.com/users/ahsan/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ahsan/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ahsan/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ahsan/subscriptions",
+      "organizations_url": "https://api.github.com/users/ahsan/orgs",
+      "repos_url": "https://api.github.com/users/ahsan/repos",
+      "events_url": "https://api.github.com/users/ahsan/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ahsan/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "886d2f9312c324587f8edf9bb5ef561224a478e7",
+        "url": "https://api.github.com/repos/restify/node-restify/commits/886d2f9312c324587f8edf9bb5ef561224a478e7",
+        "html_url": "https://github.com/restify/node-restify/commit/886d2f9312c324587f8edf9bb5ef561224a478e7"
+      }
+    ]
+  },
+  {
+    "sha": "886d2f9312c324587f8edf9bb5ef561224a478e7",
+    "node_id": "MDY6Q29tbWl0MTY2MTc1ODo4ODZkMmY5MzEyYzMyNDU4N2Y4ZWRmOWJiNWVmNTYxMjI0YTQ3OGU3",
+    "commit": {
+      "author": {
+        "name": "Peter Marton",
+        "email": "pmarton@netflix.com",
+        "date": "2019-12-13T21:44:29Z"
+      },
+      "committer": {
+        "name": "Peter Marton",
+        "email": "pmarton@netflix.com",
+        "date": "2019-12-13T21:44:29Z"
+      },
+      "message": "chore(release): release 8.5.1",
+      "tree": {
+        "sha": "aafa5811fd278450546fb67994aba3785c064fe2",
+        "url": "https://api.github.com/repos/restify/node-restify/git/trees/aafa5811fd278450546fb67994aba3785c064fe2"
+      },
+      "url": "https://api.github.com/repos/restify/node-restify/git/commits/886d2f9312c324587f8edf9bb5ef561224a478e7",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/restify/node-restify/commits/886d2f9312c324587f8edf9bb5ef561224a478e7",
+    "html_url": "https://github.com/restify/node-restify/commit/886d2f9312c324587f8edf9bb5ef561224a478e7",
+    "comments_url": "https://api.github.com/repos/restify/node-restify/commits/886d2f9312c324587f8edf9bb5ef561224a478e7/comments",
+    "author": {
+      "login": "hekike",
+      "id": 1764512,
+      "node_id": "MDQ6VXNlcjE3NjQ1MTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1764512?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hekike",
+      "html_url": "https://github.com/hekike",
+      "followers_url": "https://api.github.com/users/hekike/followers",
+      "following_url": "https://api.github.com/users/hekike/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hekike/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hekike/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hekike/subscriptions",
+      "organizations_url": "https://api.github.com/users/hekike/orgs",
+      "repos_url": "https://api.github.com/users/hekike/repos",
+      "events_url": "https://api.github.com/users/hekike/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hekike/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "hekike",
+      "id": 1764512,
+      "node_id": "MDQ6VXNlcjE3NjQ1MTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1764512?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hekike",
+      "html_url": "https://github.com/hekike",
+      "followers_url": "https://api.github.com/users/hekike/followers",
+      "following_url": "https://api.github.com/users/hekike/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hekike/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hekike/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hekike/subscriptions",
+      "organizations_url": "https://api.github.com/users/hekike/orgs",
+      "repos_url": "https://api.github.com/users/hekike/repos",
+      "events_url": "https://api.github.com/users/hekike/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hekike/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "42422de7029c3d389614240ce08b3dc4e3e4fca8",
+        "url": "https://api.github.com/repos/restify/node-restify/commits/42422de7029c3d389614240ce08b3dc4e3e4fca8",
+        "html_url": "https://github.com/restify/node-restify/commit/42422de7029c3d389614240ce08b3dc4e3e4fca8"
+      }
+    ]
+  },
+  {
+    "sha": "42422de7029c3d389614240ce08b3dc4e3e4fca8",
+    "node_id": "MDY6Q29tbWl0MTY2MTc1ODo0MjQyMmRlNzAyOWMzZDM4OTYxNDI0MGNlMDhiM2RjNGUzZTRmY2E4",
+    "commit": {
+      "author": {
+        "name": "Peter Marton",
+        "email": "pmarton@netflix.com",
+        "date": "2019-12-13T21:44:03Z"
+      },
+      "committer": {
+        "name": "Peter Marton",
+        "email": "pmarton@netflix.com",
+        "date": "2019-12-13T21:44:03Z"
+      },
+      "message": "docs(CHANGELOG): Update changelog",
+      "tree": {
+        "sha": "95fac95e7b36cca64e906595e7c84cab99d66d45",
+        "url": "https://api.github.com/repos/restify/node-restify/git/trees/95fac95e7b36cca64e906595e7c84cab99d66d45"
+      },
+      "url": "https://api.github.com/repos/restify/node-restify/git/commits/42422de7029c3d389614240ce08b3dc4e3e4fca8",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/restify/node-restify/commits/42422de7029c3d389614240ce08b3dc4e3e4fca8",
+    "html_url": "https://github.com/restify/node-restify/commit/42422de7029c3d389614240ce08b3dc4e3e4fca8",
+    "comments_url": "https://api.github.com/repos/restify/node-restify/commits/42422de7029c3d389614240ce08b3dc4e3e4fca8/comments",
+    "author": {
+      "login": "hekike",
+      "id": 1764512,
+      "node_id": "MDQ6VXNlcjE3NjQ1MTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1764512?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hekike",
+      "html_url": "https://github.com/hekike",
+      "followers_url": "https://api.github.com/users/hekike/followers",
+      "following_url": "https://api.github.com/users/hekike/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hekike/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hekike/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hekike/subscriptions",
+      "organizations_url": "https://api.github.com/users/hekike/orgs",
+      "repos_url": "https://api.github.com/users/hekike/repos",
+      "events_url": "https://api.github.com/users/hekike/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hekike/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "hekike",
+      "id": 1764512,
+      "node_id": "MDQ6VXNlcjE3NjQ1MTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1764512?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hekike",
+      "html_url": "https://github.com/hekike",
+      "followers_url": "https://api.github.com/users/hekike/followers",
+      "following_url": "https://api.github.com/users/hekike/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hekike/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hekike/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hekike/subscriptions",
+      "organizations_url": "https://api.github.com/users/hekike/orgs",
+      "repos_url": "https://api.github.com/users/hekike/repos",
+      "events_url": "https://api.github.com/users/hekike/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hekike/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e648d491151484f17263c6774678f1e7ac2fa188",
+        "url": "https://api.github.com/repos/restify/node-restify/commits/e648d491151484f17263c6774678f1e7ac2fa188",
+        "html_url": "https://github.com/restify/node-restify/commit/e648d491151484f17263c6774678f1e7ac2fa188"
+      }
+    ]
+  },
+  {
+    "sha": "e648d491151484f17263c6774678f1e7ac2fa188",
+    "node_id": "MDY6Q29tbWl0MTY2MTc1ODplNjQ4ZDQ5MTE1MTQ4NGYxNzI2M2M2Nzc0Njc4ZjFlN2FjMmZhMTg4",
+    "commit": {
+      "author": {
+        "name": "Peter Marton",
+        "email": "pmarton@netflix.com",
+        "date": "2019-12-13T21:43:30Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2019-12-13T21:43:30Z"
+      },
+      "message": "fix(server): address domain performance regression with Node v12.x (#1809)",
+      "tree": {
+        "sha": "04b9540ba1251de83de9ed2d1105021d562efbd5",
+        "url": "https://api.github.com/repos/restify/node-restify/git/trees/04b9540ba1251de83de9ed2d1105021d562efbd5"
+      },
+      "url": "https://api.github.com/repos/restify/node-restify/git/commits/e648d491151484f17263c6774678f1e7ac2fa188",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJd9AYCCRBK7hj4Ov3rIwAAdHIIAIe8pUWby/gIJW3soBTWehOj\ncd/Mede32wbtemU5FSUIIo5ULDIDwGog2cbVh3idy89Otk25H9wBWOdoQFfMT0lL\ncg3WWFXM0R2f7pyaJ0vgw63YGkGudv6LpN1G4RZBV+kZlNSYdko9X8cvaBtONKKL\nwTV/sXnTkZ3c661koNagaDyhVN10SerCeVQWKnJfqHWK0lBmTiYsksZPKjlxFxmT\nRrT7Wr//J4XzLlGVLtZBO23w7CwCojvbOf5h296szzX0AkjCpGtKJcPqCWI/2N6h\nvlLsd7y6iG5B1FT/FDN+ySJuRynNMMMWpjse9JqzSX1XlQ8dmUJuLRmZQ4OIEBM=\n=3tQK\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 04b9540ba1251de83de9ed2d1105021d562efbd5\nparent b8ec60e335b3ce95be4f2507623d357f4a600331\nauthor Peter Marton <pmarton@netflix.com> 1576273410 -0800\ncommitter GitHub <noreply@github.com> 1576273410 -0800\n\nfix(server): address domain performance regression with Node v12.x (#1809)\n\n\r\n"
+      }
+    },
+    "url": "https://api.github.com/repos/restify/node-restify/commits/e648d491151484f17263c6774678f1e7ac2fa188",
+    "html_url": "https://github.com/restify/node-restify/commit/e648d491151484f17263c6774678f1e7ac2fa188",
+    "comments_url": "https://api.github.com/repos/restify/node-restify/commits/e648d491151484f17263c6774678f1e7ac2fa188/comments",
+    "author": {
+      "login": "hekike",
+      "id": 1764512,
+      "node_id": "MDQ6VXNlcjE3NjQ1MTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1764512?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hekike",
+      "html_url": "https://github.com/hekike",
+      "followers_url": "https://api.github.com/users/hekike/followers",
+      "following_url": "https://api.github.com/users/hekike/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hekike/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hekike/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hekike/subscriptions",
+      "organizations_url": "https://api.github.com/users/hekike/orgs",
+      "repos_url": "https://api.github.com/users/hekike/repos",
+      "events_url": "https://api.github.com/users/hekike/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hekike/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b8ec60e335b3ce95be4f2507623d357f4a600331",
+        "url": "https://api.github.com/repos/restify/node-restify/commits/b8ec60e335b3ce95be4f2507623d357f4a600331",
+        "html_url": "https://github.com/restify/node-restify/commit/b8ec60e335b3ce95be4f2507623d357f4a600331"
+      }
+    ]
+  },
+  {
+    "sha": "b8ec60e335b3ce95be4f2507623d357f4a600331",
+    "node_id": "MDY6Q29tbWl0MTY2MTc1ODpiOGVjNjBlMzM1YjNjZTk1YmU0ZjI1MDc2MjNkMzU3ZjRhNjAwMzMx",
+    "commit": {
+      "author": {
+        "name": "Matheus Marchini",
+        "email": "mmarchini@netflix.com",
+        "date": "2019-12-10T19:03:40Z"
+      },
+      "committer": {
+        "name": "Peter Marton",
+        "email": "pmarton@netflix.com",
+        "date": "2019-12-10T19:03:40Z"
+      },
+      "message": "fix(benchmark): force latest restify version (#1810)\n\n`*` will match any stable release, which means if there's already a\r\nrestify version installed in the benchmarks directory, npm won't try to\r\nupdate it. `latest` only matches the latest version, which means npm\r\nwill always update to the latest stable version (unless it's already\r\ninstalled). This behavior can be checked with https://semver.npmjs.com/.",
+      "tree": {
+        "sha": "b3a4a8f68114f04447b917e8d7e8da131d66c1bb",
+        "url": "https://api.github.com/repos/restify/node-restify/git/trees/b3a4a8f68114f04447b917e8d7e8da131d66c1bb"
+      },
+      "url": "https://api.github.com/repos/restify/node-restify/git/commits/b8ec60e335b3ce95be4f2507623d357f4a600331",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/restify/node-restify/commits/b8ec60e335b3ce95be4f2507623d357f4a600331",
+    "html_url": "https://github.com/restify/node-restify/commit/b8ec60e335b3ce95be4f2507623d357f4a600331",
+    "comments_url": "https://api.github.com/repos/restify/node-restify/commits/b8ec60e335b3ce95be4f2507623d357f4a600331/comments",
+    "author": {
+      "login": "mmarchini",
+      "id": 4048656,
+      "node_id": "MDQ6VXNlcjQwNDg2NTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4048656?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mmarchini",
+      "html_url": "https://github.com/mmarchini",
+      "followers_url": "https://api.github.com/users/mmarchini/followers",
+      "following_url": "https://api.github.com/users/mmarchini/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mmarchini/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mmarchini/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mmarchini/subscriptions",
+      "organizations_url": "https://api.github.com/users/mmarchini/orgs",
+      "repos_url": "https://api.github.com/users/mmarchini/repos",
+      "events_url": "https://api.github.com/users/mmarchini/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mmarchini/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "hekike",
+      "id": 1764512,
+      "node_id": "MDQ6VXNlcjE3NjQ1MTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1764512?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hekike",
+      "html_url": "https://github.com/hekike",
+      "followers_url": "https://api.github.com/users/hekike/followers",
+      "following_url": "https://api.github.com/users/hekike/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hekike/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hekike/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hekike/subscriptions",
+      "organizations_url": "https://api.github.com/users/hekike/orgs",
+      "repos_url": "https://api.github.com/users/hekike/repos",
+      "events_url": "https://api.github.com/users/hekike/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hekike/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8eee722cb0cc7633a1391ba4a36af128469ffa48",
+        "url": "https://api.github.com/repos/restify/node-restify/commits/8eee722cb0cc7633a1391ba4a36af128469ffa48",
+        "html_url": "https://github.com/restify/node-restify/commit/8eee722cb0cc7633a1391ba4a36af128469ffa48"
+      }
+    ]
+  },
+  {
+    "sha": "8eee722cb0cc7633a1391ba4a36af128469ffa48",
+    "node_id": "MDY6Q29tbWl0MTY2MTc1ODo4ZWVlNzIyY2IwY2M3NjMzYTEzOTFiYTRhMzZhZjEyODQ2OWZmYTQ4",
+    "commit": {
+      "author": {
+        "name": "Peter Marton",
+        "email": "pmarton@netflix.com",
+        "date": "2019-12-02T18:37:07Z"
+      },
+      "committer": {
+        "name": "Peter Marton",
+        "email": "pmarton@netflix.com",
+        "date": "2019-12-02T18:37:07Z"
+      },
+      "message": "chore(release): release 8.5.0",
+      "tree": {
+        "sha": "8df00aad01d12b1111321ccdbaa371e5fa817d62",
+        "url": "https://api.github.com/repos/restify/node-restify/git/trees/8df00aad01d12b1111321ccdbaa371e5fa817d62"
+      },
+      "url": "https://api.github.com/repos/restify/node-restify/git/commits/8eee722cb0cc7633a1391ba4a36af128469ffa48",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/restify/node-restify/commits/8eee722cb0cc7633a1391ba4a36af128469ffa48",
+    "html_url": "https://github.com/restify/node-restify/commit/8eee722cb0cc7633a1391ba4a36af128469ffa48",
+    "comments_url": "https://api.github.com/repos/restify/node-restify/commits/8eee722cb0cc7633a1391ba4a36af128469ffa48/comments",
+    "author": {
+      "login": "hekike",
+      "id": 1764512,
+      "node_id": "MDQ6VXNlcjE3NjQ1MTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1764512?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hekike",
+      "html_url": "https://github.com/hekike",
+      "followers_url": "https://api.github.com/users/hekike/followers",
+      "following_url": "https://api.github.com/users/hekike/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hekike/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hekike/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hekike/subscriptions",
+      "organizations_url": "https://api.github.com/users/hekike/orgs",
+      "repos_url": "https://api.github.com/users/hekike/repos",
+      "events_url": "https://api.github.com/users/hekike/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hekike/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "hekike",
+      "id": 1764512,
+      "node_id": "MDQ6VXNlcjE3NjQ1MTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1764512?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hekike",
+      "html_url": "https://github.com/hekike",
+      "followers_url": "https://api.github.com/users/hekike/followers",
+      "following_url": "https://api.github.com/users/hekike/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hekike/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hekike/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hekike/subscriptions",
+      "organizations_url": "https://api.github.com/users/hekike/orgs",
+      "repos_url": "https://api.github.com/users/hekike/repos",
+      "events_url": "https://api.github.com/users/hekike/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hekike/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9bf26b5575573b219ab645b36769aeb3979a40b1",
+        "url": "https://api.github.com/repos/restify/node-restify/commits/9bf26b5575573b219ab645b36769aeb3979a40b1",
+        "html_url": "https://github.com/restify/node-restify/commit/9bf26b5575573b219ab645b36769aeb3979a40b1"
+      }
+    ]
+  },
+  {
+    "sha": "9bf26b5575573b219ab645b36769aeb3979a40b1",
+    "node_id": "MDY6Q29tbWl0MTY2MTc1ODo5YmYyNmI1NTc1NTczYjIxOWFiNjQ1YjM2NzY5YWViMzk3OWE0MGIx",
+    "commit": {
+      "author": {
+        "name": "Peter Marton",
+        "email": "pmarton@netflix.com",
+        "date": "2019-12-02T18:36:41Z"
+      },
+      "committer": {
+        "name": "Peter Marton",
+        "email": "pmarton@netflix.com",
+        "date": "2019-12-02T18:36:41Z"
+      },
+      "message": "docs(CHANGELOG): Update changelog",
+      "tree": {
+        "sha": "74024b9772348ef82d28db78e9c2c8af7967c567",
+        "url": "https://api.github.com/repos/restify/node-restify/git/trees/74024b9772348ef82d28db78e9c2c8af7967c567"
+      },
+      "url": "https://api.github.com/repos/restify/node-restify/git/commits/9bf26b5575573b219ab645b36769aeb3979a40b1",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/restify/node-restify/commits/9bf26b5575573b219ab645b36769aeb3979a40b1",
+    "html_url": "https://github.com/restify/node-restify/commit/9bf26b5575573b219ab645b36769aeb3979a40b1",
+    "comments_url": "https://api.github.com/repos/restify/node-restify/commits/9bf26b5575573b219ab645b36769aeb3979a40b1/comments",
+    "author": {
+      "login": "hekike",
+      "id": 1764512,
+      "node_id": "MDQ6VXNlcjE3NjQ1MTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1764512?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hekike",
+      "html_url": "https://github.com/hekike",
+      "followers_url": "https://api.github.com/users/hekike/followers",
+      "following_url": "https://api.github.com/users/hekike/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hekike/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hekike/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hekike/subscriptions",
+      "organizations_url": "https://api.github.com/users/hekike/orgs",
+      "repos_url": "https://api.github.com/users/hekike/repos",
+      "events_url": "https://api.github.com/users/hekike/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hekike/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "hekike",
+      "id": 1764512,
+      "node_id": "MDQ6VXNlcjE3NjQ1MTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1764512?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hekike",
+      "html_url": "https://github.com/hekike",
+      "followers_url": "https://api.github.com/users/hekike/followers",
+      "following_url": "https://api.github.com/users/hekike/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hekike/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hekike/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hekike/subscriptions",
+      "organizations_url": "https://api.github.com/users/hekike/orgs",
+      "repos_url": "https://api.github.com/users/hekike/repos",
+      "events_url": "https://api.github.com/users/hekike/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hekike/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "703470ad82fd01e7f3b2197ebb7eb1b5b37975f8",
+        "url": "https://api.github.com/repos/restify/node-restify/commits/703470ad82fd01e7f3b2197ebb7eb1b5b37975f8",
+        "html_url": "https://github.com/restify/node-restify/commit/703470ad82fd01e7f3b2197ebb7eb1b5b37975f8"
+      }
+    ]
+  },
+  {
+    "sha": "703470ad82fd01e7f3b2197ebb7eb1b5b37975f8",
+    "node_id": "MDY6Q29tbWl0MTY2MTc1ODo3MDM0NzBhZDgyZmQwMWU3ZjNiMjE5N2ViYjdlYjFiNWIzNzk3NWY4",
+    "commit": {
+      "author": {
+        "name": "Matheus Marchini",
+        "email": "mmarchini@netflix.com",
+        "date": "2019-12-02T18:36:08Z"
+      },
+      "committer": {
+        "name": "Peter Marton",
+        "email": "pmarton@netflix.com",
+        "date": "2019-12-02T18:36:08Z"
+      },
+      "message": "feat(chain): use nextTick instead of setImmediate (#1808)",
+      "tree": {
+        "sha": "99dc749bd1f2c4e3f686bcc1c8b40c0607dce107",
+        "url": "https://api.github.com/repos/restify/node-restify/git/trees/99dc749bd1f2c4e3f686bcc1c8b40c0607dce107"
+      },
+      "url": "https://api.github.com/repos/restify/node-restify/git/commits/703470ad82fd01e7f3b2197ebb7eb1b5b37975f8",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/restify/node-restify/commits/703470ad82fd01e7f3b2197ebb7eb1b5b37975f8",
+    "html_url": "https://github.com/restify/node-restify/commit/703470ad82fd01e7f3b2197ebb7eb1b5b37975f8",
+    "comments_url": "https://api.github.com/repos/restify/node-restify/commits/703470ad82fd01e7f3b2197ebb7eb1b5b37975f8/comments",
+    "author": {
+      "login": "mmarchini",
+      "id": 4048656,
+      "node_id": "MDQ6VXNlcjQwNDg2NTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4048656?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mmarchini",
+      "html_url": "https://github.com/mmarchini",
+      "followers_url": "https://api.github.com/users/mmarchini/followers",
+      "following_url": "https://api.github.com/users/mmarchini/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mmarchini/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mmarchini/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mmarchini/subscriptions",
+      "organizations_url": "https://api.github.com/users/mmarchini/orgs",
+      "repos_url": "https://api.github.com/users/mmarchini/repos",
+      "events_url": "https://api.github.com/users/mmarchini/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mmarchini/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "hekike",
+      "id": 1764512,
+      "node_id": "MDQ6VXNlcjE3NjQ1MTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1764512?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hekike",
+      "html_url": "https://github.com/hekike",
+      "followers_url": "https://api.github.com/users/hekike/followers",
+      "following_url": "https://api.github.com/users/hekike/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hekike/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hekike/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hekike/subscriptions",
+      "organizations_url": "https://api.github.com/users/hekike/orgs",
+      "repos_url": "https://api.github.com/users/hekike/repos",
+      "events_url": "https://api.github.com/users/hekike/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hekike/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9ea8227e2932308982ba636fde4d7f2d2a4e9411",
+        "url": "https://api.github.com/repos/restify/node-restify/commits/9ea8227e2932308982ba636fde4d7f2d2a4e9411",
+        "html_url": "https://github.com/restify/node-restify/commit/9ea8227e2932308982ba636fde4d7f2d2a4e9411"
+      }
+    ]
+  },
+  {
+    "sha": "9ea8227e2932308982ba636fde4d7f2d2a4e9411",
+    "node_id": "MDY6Q29tbWl0MTY2MTc1ODo5ZWE4MjI3ZTI5MzIzMDg5ODJiYTYzNmZkZTRkN2YyZDJhNGU5NDEx",
+    "commit": {
+      "author": {
+        "name": "Peter Marton",
+        "email": "pmarton@netflix.com",
+        "date": "2019-11-27T19:52:41Z"
+      },
+      "committer": {
+        "name": "Peter Marton",
+        "email": "pmarton@netflix.com",
+        "date": "2019-11-27T19:52:41Z"
+      },
+      "message": "chore(release): release 8.4.1",
+      "tree": {
+        "sha": "21cef4bfac1edcb125b3cae777e7b2c024291408",
+        "url": "https://api.github.com/repos/restify/node-restify/git/trees/21cef4bfac1edcb125b3cae777e7b2c024291408"
+      },
+      "url": "https://api.github.com/repos/restify/node-restify/git/commits/9ea8227e2932308982ba636fde4d7f2d2a4e9411",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/restify/node-restify/commits/9ea8227e2932308982ba636fde4d7f2d2a4e9411",
+    "html_url": "https://github.com/restify/node-restify/commit/9ea8227e2932308982ba636fde4d7f2d2a4e9411",
+    "comments_url": "https://api.github.com/repos/restify/node-restify/commits/9ea8227e2932308982ba636fde4d7f2d2a4e9411/comments",
+    "author": {
+      "login": "hekike",
+      "id": 1764512,
+      "node_id": "MDQ6VXNlcjE3NjQ1MTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1764512?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hekike",
+      "html_url": "https://github.com/hekike",
+      "followers_url": "https://api.github.com/users/hekike/followers",
+      "following_url": "https://api.github.com/users/hekike/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hekike/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hekike/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hekike/subscriptions",
+      "organizations_url": "https://api.github.com/users/hekike/orgs",
+      "repos_url": "https://api.github.com/users/hekike/repos",
+      "events_url": "https://api.github.com/users/hekike/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hekike/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "hekike",
+      "id": 1764512,
+      "node_id": "MDQ6VXNlcjE3NjQ1MTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1764512?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hekike",
+      "html_url": "https://github.com/hekike",
+      "followers_url": "https://api.github.com/users/hekike/followers",
+      "following_url": "https://api.github.com/users/hekike/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hekike/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hekike/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hekike/subscriptions",
+      "organizations_url": "https://api.github.com/users/hekike/orgs",
+      "repos_url": "https://api.github.com/users/hekike/repos",
+      "events_url": "https://api.github.com/users/hekike/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hekike/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5d6f0a7525986c72643ddeee77e70d21cfe67ccd",
+        "url": "https://api.github.com/repos/restify/node-restify/commits/5d6f0a7525986c72643ddeee77e70d21cfe67ccd",
+        "html_url": "https://github.com/restify/node-restify/commit/5d6f0a7525986c72643ddeee77e70d21cfe67ccd"
+      }
+    ]
+  }
+]

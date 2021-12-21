@@ -1,10 +1,10 @@
-export interface IGithubRepo {
+export interface IGhApiRepo {
     id?: number;
     node_id?: string;
     name?: string;
     full_name?: string;
     private?: boolean;
-    owner?: Owner;
+    owner?: IGhApiOwner;
     html_url?: string;
     description?: string;
     fork?: boolean;
@@ -67,7 +67,7 @@ export interface IGithubRepo {
     archived?: boolean;
     disabled?: boolean;
     open_issues_count?: number;
-    license?: License;
+    license?: IGhApiLicense;
     allow_forking?: boolean;
     is_template?: boolean;
     topics?: string[];
@@ -76,10 +76,10 @@ export interface IGithubRepo {
     open_issues?: number;
     watchers?: number;
     default_branch?: string;
-    permissions?: Permissions;
+    permissions?: IGhApiPermissions;
 }
 
-export interface License {
+export interface IGhApiLicense {
     key?: string;
     name?: string;
     spdx_id?: string;
@@ -87,7 +87,7 @@ export interface License {
     node_id?: string;
 }
 
-export interface Owner {
+export interface IGhApiOwner {
     login?: string;
     id?: number;
     node_id?: string;
@@ -108,7 +108,7 @@ export interface Owner {
     site_admin?: boolean;
 }
 
-export interface Permissions {
+export interface IGhApiPermissions {
     admin?: boolean;
     maintain?: boolean;
     push?: boolean;
@@ -118,7 +118,7 @@ export interface Permissions {
 
 // ################################
 
-export interface GithubRepoCommit {
+export interface IGhApiCommit {
     sha?: string;
     node_id?: string;
     commit?: Commit;
@@ -186,3 +186,9 @@ export interface Parent {
 }
 
 // ###################################
+
+export interface IGhApiAggregate {
+    repo: IGhApiRepo,
+    commits: IGhApiCommit[],
+    languages: { [key: string]: number }
+}

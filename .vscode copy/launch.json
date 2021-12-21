@@ -1,0 +1,39 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node-terminal",
+            "request": "launch",
+            "name": "Launch after build TS",
+            "command": "cd blitz-tester && yarn run build && yarn run start",
+            "outFiles": [
+                "${workspaceFolder}/blitz-tester/.next/**/*.js"
+            ]
+        },
+        {
+            "name": "Blitz: debug server-side",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "cd blitz-tester && yarn run start",
+            "localRoot": "${workspaceRoot}/blitz-tester/.next"
+        },
+        {
+            "name": "Blitz: debug client-side",
+            "type": "pwa-chrome",
+            "request": "launch",
+            "url": "http://localhost:3000"
+        },
+        {
+            "name": "Blitz: debug full stack",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "cd blitz-tester && yarn run dev",
+            "console": "integratedTerminal",
+            "serverReadyAction": {
+                "pattern": "started server on .+, url: (https?://.+)",
+                "uriFormat": "%s",
+                "action": "debugWithChrome"
+            }
+        }
+    ]
+}

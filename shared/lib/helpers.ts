@@ -47,3 +47,5 @@ export const deepCopy = <T>(target: T): T => {
 export const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export const isObjectEmpty = (object: {}) => Object.keys(object).length === 0
+
+const pipe = (...args) => args.reduce((acc, el) => el(acc));
