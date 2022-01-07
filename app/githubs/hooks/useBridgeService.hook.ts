@@ -28,7 +28,7 @@ import { BsFillCheckCircleFill } from 'react-icons/bs'
 //     useEffect(() => {
 
 //         for (const handler of handlers) {
-            
+
 //         }
 
 //         return () => {
@@ -41,8 +41,6 @@ import { BsFillCheckCircleFill } from 'react-icons/bs'
 export function useBridgeService(sessionUserId: number, socket: Socket, notifications: NotificationsContextProps): {
     setStart: Dispatch<SetStateAction<boolean>>
 } {
-    console.log(`useBridgeService=>render=>sessionUserId${sessionUserId}`)
-
     const [start, setStart] = useState<boolean>(false)
 
     const notificationId = useRef<string>("")
@@ -50,8 +48,6 @@ export function useBridgeService(sessionUserId: number, socket: Socket, notifica
     useEffect(() => {
 
         if (start && sessionUserId !== null) {
-
-            console.log(`useBridgeService=>useEffect=>sessionUserId=>${sessionUserId}`);
 
             socket.on("sync-server-start", (event: IServerStartSyncEvent) => {
                 const id = notifications.showNotification({
@@ -66,7 +62,7 @@ export function useBridgeService(sessionUserId: number, socket: Socket, notifica
             })
 
             socket.on("sync-server-progress", (event: IServerProgressSyncEvent) => {
-                notifications.showNotification({ color: "teal", autoClose: 1500, message: `page: ${event.page!} of ${event.pages}` })
+                notifications.showNotification({ color: "teal", autoClose: 5000, message: `page: ${event.page!} of ${event.pages}` })
             })
 
             socket.on("sync-server-end", (event: IServerProgressSyncEvent) => {
@@ -76,15 +72,11 @@ export function useBridgeService(sessionUserId: number, socket: Socket, notifica
             })
 
             socket.emit("sync", <IClientSyncEvent>{ sessionUserId })
-
-            return () => {
-                console.log("unmounted")
-                socket.removeAllListeners()
-            }
         }
 
         return () => {
-
+            console.log("unmounted")
+            socket.removeAllListeners()
         }
     }, [start])
 

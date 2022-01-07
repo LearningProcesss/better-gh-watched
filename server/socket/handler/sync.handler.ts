@@ -1,4 +1,4 @@
-import { GithubAuthService, GithubSyncServiceEventer, GithubSyncService } from "server/github";
+import { GithubAuthService, GithubSyncService } from "server/github";
 import { IClientSyncEvent, IServerEndSyncEvent, IServerProgressSyncEvent, IServerStartSyncEvent } from "shared/github.service.sync/events";
 import { wrapErr } from "shared/lib";
 import { Socket } from "socket.io";
@@ -11,32 +11,26 @@ export const syncHandler = (socket: Socket, authService: GithubAuthService, sync
 
         if (!authenticated) { return }
 
-        console.log(`syncHandler->sync->sessionUserId:${sessionUserId} socket.id:${socket.id}`);
+        syncService.setOctokit(authService.getClient())
 
-        // if (socketManager.isAlreadyWorking(socket.id)) {
-        //     console.log("server -> socket.io -> event: sync -> blocked!", event, socket.id);
-        //     return
-        // }
+        syncService.start()
 
-        // socketManager.setIsWorking(socket.id, true)
-
-        syncService.process(authService.getClient())
-
-        syncService.on("sync-process-start", (totalPages: number) => {
-            socket.emit("sync-server-start", <IServerStartSyncEvent>{ title: "Subscription process", message: `the process is started, total pages to fetch: ${totalPages}`, processName: "subscriptions", totalPages: 1000 })
+        syncService.on("sync-process-start", (event: { pages: number }) => {
+            socket.emit("sync-server-start", <IServerStartSyncEvent>
+                {
+                    title: "Subscription process",
+                    message: `the process is started, total pages to fetch: ${event.pages}`,
+                    processName: "subscriptions",
+                    totalPages: event.pages
+                })
         })
 
-        syncService.on("sync-page-end", (page: number) => {
-
-            console.log("syncHandler->sync->syncService.pageProcessed", page, 1000);
-
-            socket.emit("sync-server-progress", <IServerProgressSyncEvent>{ page: page, pages: 1000 })
-
-            // socketManager.setIsWorking(socket.id, false)
+        syncService.on("sync-page-end", (event: { page: number, pages: number }) => {
+            socket.emit("sync-server-progress", <IServerProgressSyncEvent>{ page: event.page, pages: event.pages })
         })
 
-        syncService.on("sync-process-end", () => {
-            socket.emit("sync-server-end", <IServerEndSyncEvent>{ key: "subscriptions" })
+        syncService.on("sync-process-end", (event: { message: string, completed: boolean }) => {
+            socket.emit("sync-server-end", <IServerEndSyncEvent>{ key: "subscriptions", message: event.message, completed: event.completed })
         })
     });
 }

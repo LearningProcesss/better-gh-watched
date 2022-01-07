@@ -45,12 +45,15 @@
     "zod": "3.11.6"
   },
   "devDependencies": {
+    "@types/jest": "27.0.3",
     "@types/passport-github2": "1.2.5",
     "@types/preview-email": "2.0.1",
     "@types/react": "17.0.37",
     "eslint": "7.32.0",
     "husky": "7.0.4",
+    "jest-mock-extended": "2.0.4",
     "lint-staged": "11.3.0-beta.2",
+    "msw": "0.36.3",
     "prettier": "2.5.1",
     "prettier-plugin-prisma": "3.6.0",
     "pretty-quick": "3.1.2",
