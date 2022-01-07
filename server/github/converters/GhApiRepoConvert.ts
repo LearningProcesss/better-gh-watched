@@ -1,4 +1,4 @@
-import { IGhApiRepo } from "./githubapi.model";
+import { IGhApiRepo } from "../githubapi.model";
 
 export class GhApiRepoConvert {
     public static toRepo(json: string): IGhApiRepo[] {
@@ -190,9 +190,9 @@ const typeMap: any = {
         { json: "labels_url", js: "labels_url", typ: "" },
         { json: "releases_url", js: "releases_url", typ: "" },
         { json: "deployments_url", js: "deployments_url", typ: "" },
-        { json: "created_at", js: "created_at", typ: Date },
-        { json: "updated_at", js: "updated_at", typ: Date },
-        { json: "pushed_at", js: "pushed_at", typ: Date },
+        { json: "created_at", js: "created_at", typ: "" },
+        { json: "updated_at", js: "updated_at", typ: "" },
+        { json: "pushed_at", js: "pushed_at", typ: "" },
         { json: "git_url", js: "git_url", typ: "" },
         { json: "ssh_url", js: "ssh_url", typ: "" },
         { json: "clone_url", js: "clone_url", typ: "" },

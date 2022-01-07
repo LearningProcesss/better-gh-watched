@@ -74,13 +74,8 @@ const GithubPortalPage: BlitzPage = ({ repoCount, topicCount, languageCount }: I
   }, [debouncedWhere])
 
   useEffect(() => {
-
-    console.log("useEffect=>triggered=>syncWithGithub=>", syncWithGithub);
-
-
     if (syncWithGithub) {
       setStart(state => true)
-
     }
 
     return () => {
@@ -89,8 +84,6 @@ const GithubPortalPage: BlitzPage = ({ repoCount, topicCount, languageCount }: I
   }, [syncWithGithub])
 
   const syncWithGithubHandler = useCallback((flag: boolean) => {
-    console.log("syncWithGithubHandler=>", flag);
-
     setSyncWithGithub(flag)
   }, [])
 

@@ -29,7 +29,7 @@ export const repoApiToDto = (aggregate: IGhApiAggregate): IGithubDto => {
         full_name: aggregate.repo.full_name!,
         html_url: aggregate.repo.html_url!,
         url: aggregate.repo.url!,
-        description: aggregate.repo.description!,
+        description: aggregate.repo.description ?? '',
         stargazers_count: aggregate.repo.stargazers_count!,
         avatar_url: aggregate.repo.owner!.avatar_url!,
         latest_commit: aggregate.commits[0]!.commit!.author?.date!,

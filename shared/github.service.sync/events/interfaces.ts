@@ -20,7 +20,9 @@ export interface IServerProgressSyncEvent {
 }
 
 export interface IServerEndSyncEvent {
-    key: string
+    key: string,
+    message: string,
+    completed: boolean
 }
 
 export interface IClientSyncEvent {

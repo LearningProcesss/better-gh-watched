@@ -1,14 +1,25 @@
 import { rest } from 'msw'
-import { setupServer } from 'msw/node'
+import { setupServer, SetupServerApi } from 'msw/node'
 import fs from 'fs'
 import path from 'path'
+import { GhApiCommitConverter, GhApiRepoConvert } from '../converters'
 
-const subscriptionFirst30 = fs.readFileSync(path.join(__dirname, './fixtures/api.github.com.user.subscriptions.json'), 'utf-8')
+let worker: SetupServerApi
 
-const data = JSON.parse(subscriptionFirst30)
+export const listenGithubApiServerStub = () => {
+    worker.listen()
+}
+
+export const closeGithubApiServerStub = () => {
+    worker.close()
+}
+
+export const resetHandlersServerStub = () => {
+    worker.resetHandlers()
+}
 
 export const githubApiServerStub = () => {
-    const worker = setupServer(
+    worker = setupServer(
         rest.get('https://api.github.com/user', (req, res, ctx) => {
             console.log("worker intercepted!")
             return res(
@@ -51,14 +62,50 @@ export const githubApiServerStub = () => {
             )
         }),
         rest.get('https://api.github.com/user/subscriptions', (req, res, ctx) => {
+
+            const apiRepoList = GhApiRepoConvert.toRepo(fs.readFileSync(path.join(__dirname, './fixtures/api.github.com.user.subscriptions.json'), 'utf-8'))
+
+            return res(
+                ctx.status(200),
+                ctx.set('x-ratelimit-remaining', '4999'),
+                ctx.set('link', '<https://api.github.com/user/subscriptions?page=2>; rel="next", <https://api.github.com/user/subscriptions?page=2>; rel="last">'),
+                ctx.json(apiRepoList)
+            )
+        }),
+        rest.get('https://api.github.com/repos/restify/node-restify/commits', (req, res, ctx) => {
+
+            const apiCommitList = GhApiCommitConverter.toIGhAPICommit(fs.readFileSync(path.join(__dirname, './fixtures/api.github.com.repo.commit.json'), 'utf-8'))
+
+            return res(
+                ctx.status(200),
+                ctx.set('x-ratelimit-remaining', '4999'),
+                ctx.set('link', '<https://api.github.com/user/subscriptions?per_page=1&page=2>; rel="next", <https://api.github.com/user/subscriptions?per_page=30&page=1>; rel="last">'),
+                ctx.json(apiCommitList)
+            )
+        }),
+        rest.get('https://api.github.com/repos/restify/node-restify/languages', (req, res, ctx) => {
+
+            const apiLanguage = fs.readFileSync(path.join(__dirname, './fixtures/api.github.com.repo.languages.json'), 'utf-8')
+
+            const apiLanguageList: { [key: string]: number } = JSON.parse(apiLanguage)
+
             return res(
                 ctx.status(200),
                 ctx.set('x-ratelimit-remaining', '4999'),
                 ctx.set('link', '<https://api.github.com/user/subscriptions?per_page=1&page=2>; rel="next", <https://api.github.com/user/subscriptions?per_page=30&page=1>; rel="last"'),
-                ctx.json(subscriptionFirst30)
+                ctx.json(apiLanguageList)
+            )
+        }),
+        rest.get('https://api.github.com/rate_limit', (req, res, ctx) => {
+
+            const apiRate = fs.readFileSync(path.join(__dirname, './fixtures/api.github.com.ratelimit.json'), 'utf-8')
+
+            return res(
+                ctx.status(200),
+                ctx.json(JSON.parse(apiRate))
             )
         })
     )
 
-    worker.listen()
+    listenGithubApiServerStub()
 }

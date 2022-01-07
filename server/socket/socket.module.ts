@@ -1,6 +1,6 @@
 import { PrismaClient } from 'db';
 import * as HttpServer from 'http'
-import { GithubAuthService, GithubSyncService } from 'server/github';
+import { GithubAuthService, GithubSyncServiceGenerator, GithubSyncService } from 'server/github';
 import { Server, Socket } from "socket.io";
 import { syncHandler } from './handler';
 
