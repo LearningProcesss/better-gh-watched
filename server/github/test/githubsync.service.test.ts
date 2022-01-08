@@ -1,6 +1,6 @@
 import { Octokit } from "octokit";
-import { GithubSyncService, GithubSyncServiceGenerator } from '..';
-import { closeGithubApiServerStub, githubApiServerStub, resetHandlersServerStub, listenGithubApiServerStub } from "./githubApiServerStub";
+import { GithubSyncService, GithubSyncServiceGenerator } from 'server/github';
+import { closeGithubApiServerStub, resetHandlersServerStub, listenGithubApiServerStub } from "./githubApiServerStub";
 import { createMockContext, Context, MockContext, prismaMockSingleton } from 'db/test'
 import { GithubRepoLanguage, GithubRepoTopics, PrismaClient } from 'db'
 import fs from 'fs'
@@ -10,7 +10,7 @@ import { IGhApiAggregate, IGhAPICommit, IGhApiRepo } from "../githubapi.model";
 import { repoApiToDto, repoDbToDto } from "shared/mappers";
 import { GithubRepo } from 'db'
 import { IGithubDto } from "shared/models";
-import { GhApiCommitConverter } from "../converters";
+import { GhApiCommitConverter } from "server/github/converters";
 import { setupServer, SetupServerApi } from 'msw/node'
 import { commitsHandler, languagesHandler, rateLimitNotOkHandler, rateLimitOkHandler, subscriptionsHandler, userHandler } from "./githubApiServerStubHandler";
 

@@ -1,20 +1,10 @@
 import { passportAuth } from 'blitz'
 import db, { User } from 'db'
+import crypto from "crypto"
 import GihubPassportGlobal, { Strategy } from 'passport-github2'
+import { GithubAuthService } from 'server/github'
 
 const GitHubStrategy = Strategy
-
-// async function encrypt(toBeHashed: string, key: string): Promise<string> {
-//     const result = AES.encrypt(toBeHashed, key)
-
-//     return result.toString();
-// }
-
-// async function decrypt(toBeDescrypt: string, key: string) {
-//     const result = AES.decrypt(toBeDescrypt, key)
-
-//     return result.toString()
-// }
 
 export default passportAuth(({ ctx, req, res }) => ({
     successRedirectUrl: "",
@@ -34,29 +24,26 @@ export default passportAuth(({ ctx, req, res }) => ({
                     //error
                 }
 
-                // const encrypted: string = await encrypt(accessToken, process.env.APP_HASH_SECRET + '')
+                // const userDb: User = await db.user.upsert({
+                //     where: {
+                //         email
+                //     },
+                //     create: {
+                //         email,
+                //         name: profile.displayName,
+                //         hashedPassword: accessToken
+                //     },
+                //     update: {
 
-                // const decrypted = await decrypt(encrypted, process.env.APP_HASH_SECRET + '')
+                //     }
+                // })
 
-                // console.log(encrypted)
-                // console.log(decrypted);
-                
-                const userDb: User = await db.user.upsert({
-                    where: {
-                        email
-                    },
-                    create: {
-                        email,
-                        name: profile.displayName,
-                        hashedPassword: accessToken
-                    },
-                    update: {
+                const authService: GithubAuthService = new GithubAuthService(db)
 
-                    }
-                })
+                const userId = await authService.secureThenSaveOauthUser(accessToken, email, profile.displayName)
 
                 const publicData = {
-                    userId: userDb.id
+                    userId: userId.id
                 }
 
                 const result = {

@@ -7,7 +7,7 @@ export const syncHandler = (socket: Socket, authService: GithubAuthService, sync
 
     socket.on('sync', async ({ sessionUserId }: IClientSyncEvent) => {
 
-        const [error, authenticated] = await wrapErr(authService.authenticate(sessionUserId))
+        const [error, authenticated] = await wrapErr(authService.authenticateGithubBySessionId(sessionUserId))
 
         if (!authenticated) { return }
 
