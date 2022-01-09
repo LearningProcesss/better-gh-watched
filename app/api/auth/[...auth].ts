@@ -15,7 +15,7 @@ export default passportAuth(({ ctx, req, res }) => ({
                 clientSecret: process.env.GITHUB_OAUTHAPP_CLIENTSECRET + '',
                 callbackURL: process.env.GITHUB_OAUTHAPP_CALLBACKURL + ''
             }, async function (accessToken: string, refreshToken: string, profile: GihubPassportGlobal.Profile, done) {
-                console.log(`GithubStrategy -> accessToken: ${accessToken} - refreshToken: ${refreshToken} - profile: ${JSON.stringify(profile)}`)
+                // console.log(`GithubStrategy -> accessToken: ${accessToken} - refreshToken: ${refreshToken} - profile: ${JSON.stringify(profile)}`)
 
                 const email = profile.emails && profile.emails[0]?.value || ""
 

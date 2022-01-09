@@ -52,7 +52,9 @@ export class GithubAuthService {
                 hashedPassword: secured
             },
             update: {
-
+                email,
+                name: displayName,
+                hashedPassword: secured
             }
         })
 
