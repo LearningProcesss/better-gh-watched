@@ -1,8 +1,7 @@
 import { passportAuth } from 'blitz'
-import db, { User } from 'db'
-import crypto from "crypto"
+import db from 'db'
 import GihubPassportGlobal, { Strategy } from 'passport-github2'
-import { GithubAuthService } from 'server/github'
+import { GithubAuthService, Secure } from 'server/github/services'
 
 const GitHubStrategy = Strategy
 
@@ -24,21 +23,7 @@ export default passportAuth(({ ctx, req, res }) => ({
                     //error
                 }
 
-                // const userDb: User = await db.user.upsert({
-                //     where: {
-                //         email
-                //     },
-                //     create: {
-                //         email,
-                //         name: profile.displayName,
-                //         hashedPassword: accessToken
-                //     },
-                //     update: {
-
-                //     }
-                // })
-
-                const authService: GithubAuthService = new GithubAuthService(db)
+                const authService: GithubAuthService = new GithubAuthService(db, new Secure())
 
                 const userId = await authService.secureThenSaveOauthUser(accessToken, email, profile.displayName)
 

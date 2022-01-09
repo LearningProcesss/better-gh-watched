@@ -1,4 +1,4 @@
-import { GithubAuthService, GithubSyncService } from "server/github";
+import { GithubAuthService, GithubSyncService } from "server/github/services";
 import { IClientSyncEvent, IServerEndSyncEvent, IServerProgressSyncEvent, IServerStartSyncEvent } from "shared/github.service.sync/events";
 import { wrapErr } from "shared/lib";
 import { Socket } from "socket.io";
