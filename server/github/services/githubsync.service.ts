@@ -4,7 +4,7 @@ import { Octokit } from "octokit";
 import { range, sleep, wrapErr } from "shared/lib";
 import { repoApiToDto } from "shared/mappers";
 import { IGithubDto } from "shared/models";
-import { IGhApiAggregate, IGhAPICommit, IGhApiRepo } from "./githubapi.model";
+import { IGhApiAggregate, IGhAPICommit, IGhApiRepo } from "../githubapi.model";
 
 
 export class GithubSyncServiceGenerator extends EventEmitter {

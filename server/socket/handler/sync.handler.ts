@@ -1,4 +1,4 @@
-import { GithubAuthService, GithubSyncService } from "server/github";
+import { GithubAuthService, GithubSyncService } from "server/github/services";
 import { IClientSyncEvent, IServerEndSyncEvent, IServerProgressSyncEvent, IServerStartSyncEvent } from "shared/github.service.sync/events";
 import { wrapErr } from "shared/lib";
 import { Socket } from "socket.io";
@@ -7,7 +7,7 @@ export const syncHandler = (socket: Socket, authService: GithubAuthService, sync
 
     socket.on('sync', async ({ sessionUserId }: IClientSyncEvent) => {
 
-        const [error, authenticated] = await wrapErr(authService.authenticate(sessionUserId))
+        const [error, authenticated] = await wrapErr(authService.authenticateGithubBySessionId(sessionUserId))
 
         if (!authenticated) { return }
 
