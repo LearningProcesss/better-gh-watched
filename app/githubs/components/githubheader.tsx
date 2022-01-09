@@ -11,12 +11,12 @@ type Props = {
 
 export default function GithubHeader({ style, syncWithGithubHandler }: Props) {
     return (
-        <Header style={{ borderRadius: "10px", backgroundColor: "#16181D", margin: "1rem", ...style }} height={120} padding="lg">
+        <Header style={{ borderRadius: "10px", backgroundColor: "#16181D", margin: "1rem", ...style }} height={100} padding="lg">
             <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignContent: "center", alignItems: "center" }}>
                 <Group style={{ flexGrow: 10 }}>
                     <GoMarkGithub color="#F8F8F8" size="64px" />
                     <Title order={1} style={{ color: "#F8F8F8", fontFamily: 'Greycliff CF, sans-serif' }}>
-                        GithubBetterExplorer
+                        better-gh-watched
                     </Title>
                 </Group>
                 <Menu control={<Button >Actions</Button>}>
