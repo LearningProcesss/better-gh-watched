@@ -11,7 +11,8 @@
     "test:clonedb": "rm -f db/db_test.sqlite && cp db/db.sqlite db/db_test.sqlite",
     "test": "jest",
     "test:watch": "jest --watch",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "firstRun": "yarn prisma generate && yarn prisma migrate dev"
   },
   "prisma": {
     "schema": "db/schema.prisma"
@@ -30,7 +31,7 @@
     "@mantine/hooks": "3.4.1",
     "@mantine/modals": "3.4.1",
     "@mantine/notifications": "3.4.1",
-    "@prisma/client": "3.6.0",
+    "@prisma/client": "3.13.0",
     "blitz": "0.44.4",
     "final-form": "4.20.6",
     "octokit": "1.7.1",
@@ -58,7 +59,7 @@
     "prettier-plugin-prisma": "3.6.0",
     "pretty-quick": "3.1.2",
     "preview-email": "3.0.5",
-    "prisma": "3.6.0",
+    "prisma": "3.13.0",
     "typescript": "~4.5"
   },
   "private": true

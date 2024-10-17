@@ -46,7 +46,7 @@ export function useBridgeService(sessionUserId: number, socket: Socket, notifica
     const notificationId = useRef<string>("")
 
     useEffect(() => {
-
+        console.log(start, sessionUserId)
         if (start && sessionUserId !== null) {
 
             socket.on("sync-server-start", (event: IServerStartSyncEvent) => {

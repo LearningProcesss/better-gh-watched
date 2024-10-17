@@ -32,7 +32,7 @@ export class GithubSyncServiceGenerator extends EventEmitter {
 
     async *processPagesStep() {
 
-        const [error, response] = await wrapErr(this.client.rest.activity.listWatchedReposForAuthenticatedUser({ headers: { accept: "application/vnd.github.mercy-preview+json" } }))
+        const [error, response] = await wrapErr(this.client.rest.activity.listWatchedReposForAuthenticatedUser({ headers: { accept: "application/vnd.github.mercy-preview+json", 'X-GitHub-Api-Version': "2022-11-28" } }))
 
         const totalPage: number = this.getPagesFromLink(response!.headers.link ?? '');
 

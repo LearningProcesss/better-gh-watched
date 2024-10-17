@@ -84,6 +84,7 @@ const GithubPortalPage: BlitzPage = ({ repoCount, topicCount, languageCount }: I
   }, [syncWithGithub])
 
   const syncWithGithubHandler = useCallback((flag: boolean) => {
+    console.log("flag", flag)
     setSyncWithGithub(flag)
   }, [])
 
